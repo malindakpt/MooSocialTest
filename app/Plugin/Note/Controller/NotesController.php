@@ -7,6 +7,26 @@ class NotesController extends NoteAppController {
      */
     public $scaffold;
     public function admin_index(){
+
+    }
+
+    public function myTopics23() {
+
+    }
+
+    public function admin_infos(){
+        // get plugin info
+        $xmlPath = sprintf(PLUGIN_INFO_PATH, 'Note');
+        if(file_exists($xmlPath))
+        {
+            $content = file_get_contents($xmlPath);
+            $info = new SimpleXMLElement($content);
+            $this->set('info', $info);
+        }
+        else
+        {
+            $this->set('info', null);
+        }
     }
 
     public function index() {
@@ -90,6 +110,30 @@ class NotesController extends NoteAppController {
                 __('The note with id: %s has been deleted.', h($id))
             );
             return $this->redirect(array('action' => 'index'));
+        }
+    }
+
+    public function myNotes(){
+        $notes = $this->Note->find('all', array(
+            'conditions' => array('uri' => $this->request->uri),
+            'limit' => 1,
+            'order' => array('Note.id' => 'DESC')
+        ));
+        return $notes;
+    }
+
+    public function ajax_add(){
+
+        if ($this->request->is('post')) {
+            $this->Note->create();
+            $this->request->data['Note']['user_id'] = $this->Session->read('uid');
+            if ($this->Note->save($this->request->data)) {
+                $note = $this->Note->findById($this->Note->getLastInsertId());
+                echo json_encode(array('result' => $note));
+                exit;
+            }
+            echo json_encode(array('error' => _d("Note", "Something went wrong! Please try again.")));
+            exit;
         }
     }
 }

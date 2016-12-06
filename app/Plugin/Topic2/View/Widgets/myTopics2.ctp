@@ -1,4 +1,6 @@
 
+<?php $contro = $this->requestAction(array('plugin' => 'Topic2', 'controller' => 'topic2s', 'action' => 'create'), array('uri' => $this->here));?>
+<?php //$notes = $this->requestAction(array('plugin' => 'Note', 'controller' => 'notes', 'action' => 'myTopics23'), array('uri' => $this->here));?>
 
 <?php $this->Html->scriptStart(array('inline' => false, 'domReady' => true, 'requires'=>array('jquery','mooTopic'), 'object' => array('$', 'mooTopic'))); ?>
 mooTopic.initOnCreate();
@@ -26,14 +28,14 @@ if (!empty($tags)){
             <div class="box3">
                 <form id="createForm">
                     <?php
-                    echo $this->Form->hidden( 'attachments', array( 'value' => $attachments_list ) );
-                    echo $this->Form->hidden('thumbnail', array('value' => $topic['Topic']['thumbnail']));
+                    echo $this->Form->hidden( 'attachments', array( 'value' => $contro->attachments_list ) );
+                    echo $this->Form->hidden('thumbnail', array('value' => $contro->topic['Topic']['thumbnail']));
                     echo $this->Form->hidden('plugin_topic_id', array('value' => PLUGIN_TOPIC_ID));
-                    if (!empty($topic['Topic']['id']))
-                        echo $this->Form->hidden('id', array('value' => $topic['Topic']['id']));
+                    if (!empty($contro->topic['Topic']['id']))
+                        echo $this->Form->hidden('id', array('value' => $contro->topic['Topic']['id']));
                     ?>
                     <div class="mo_breadcrumb">
-                        <h1><?php if (empty($topic['Topic']['id'])) echo __( 'Create New Topic'); else echo __( 'Edit Topic');?></h1>
+                        <h1><?php if (empty($contro->topic['Topic']['id'])) echo __( 'Create New Topic'); else echo __( 'Edit Topic');?></h1>
                     </div>
                     <div class="full_content p_m_10">
                         <div class="form_content">
@@ -43,7 +45,7 @@ if (!empty($tags)){
                                         <label><?php echo __( 'Topic Title')?></label>
                                     </div>
                                     <div class="col-md-10">
-                                        <?php echo $this->Form->text( 'title', array( 'value' => $topic['Topic']['title'] ) ); ?>
+                                        <?php echo $this->Form->text( 'title', array( 'value' => $contro->topic['Topic']['title'] ) ); ?>
                                     </div>
                                     <div class="clear"></div>
                                 </li>
@@ -53,7 +55,7 @@ if (!empty($tags)){
                                         <label><?php echo __( 'Category')?></label>
                                     </div>
                                     <div class="col-md-10">
-                                        <?php echo $this->Form->select( 'category_id', $cats, array( 'value' => $topic['Topic']['category_id'] ) ); ?>
+                                        <?php echo $this->Form->select( 'category_id', $contro->cats, array( 'value' => $contro->topic['Topic']['category_id'] ) ); ?>
                                     </div>
                                     <div class="clear"></div>
                                 </li>
@@ -62,7 +64,7 @@ if (!empty($tags)){
                                         <label><?php echo __( 'Topic')?></label>
                                     </div>
                                     <div class="col-md-10">
-                                        <?php echo $this->Form->tinyMCE( 'body', array( 'value' => $topic['Topic']['body'], 'id' => 'editor' ) ); ?>
+                                        <?php echo $this->Form->tinyMCE( 'body', array( 'value' => $contro->topic['Topic']['body'], 'id' => 'editor' ) ); ?>
                                     </div>
                                     <div class="clear"></div>
                                 </li>
@@ -73,8 +75,8 @@ if (!empty($tags)){
                                     <div class="col-md-10">
                                         <div id="topic_thumnail"></div>
                                         <div id="topic_thumnail_preview">
-                                            <?php if (!empty($topic['Topic']['thumbnail'])): ?>
-                                                <img width="150" src="<?php echo $topicHelper->getImage($topic, array('prefix' => '150_square'))?>" />
+                                            <?php if (!empty($contro->topic['Topic']['thumbnail'])): ?>
+                                                <img width="150" src="<?php echo $topicHelper->getImage($contro->topic, array('prefix' => '150_square'))?>" />
                                             <?php else: ?>
                                                 <img width="150" src="" style="display: none;" />
                                             <?php endif; ?>
@@ -122,11 +124,11 @@ if (!empty($tags)){
                                 <div style="margin:20px 0">
                                     <button type='button' class='btn btn-action' id="saveBtn"><?php echo __( 'Save')?></button>
 
-                                    <?php if ( !empty( $topic['Topic']['id'] ) ): ?>
-                                        <a href="<?php echo $this->request->base?>/topics/view/<?php echo $topic['Topic']['id']?>" class="button"><?php echo __( 'Cancel')?></a>
+                                    <?php if ( !empty( $contro->topic['Topic']['id'] ) ): ?>
+                                        <a href="<?php echo $this->request->base?>/topics/view/<?php echo $contro->topic['Topic']['id']?>" class="button"><?php echo __( 'Cancel')?></a>
                                     <?php endif; ?>
-                                    <?php if ( ($topic['Topic']['user_id'] == $uid ) || ( !empty( $topic['Topic']['id'] ) && $cuser['Role']['is_admin'] ) ): ?>
-                                        <a href="javascript:void(0)" data-id="<?php echo $topic['Topic']['id']?>" class="button deleteTopic"><?php echo __( 'Delete')?></a>
+                                    <?php if ( ($contro->topic['Topic']['user_id'] == $uid ) || ( !empty( $contro->topic['Topic']['id'] ) && $cuser['Role']['is_admin'] ) ): ?>
+                                        <a href="javascript:void(0)" data-id="<?php echo $contro->topic['Topic']['id']?>" class="button deleteTopic"><?php echo __( 'Delete')?></a>
                                     <?php endif; ?>
                                 </div>
                                 <div class="error-message" id="errorMessage" style="display:none"></div>
