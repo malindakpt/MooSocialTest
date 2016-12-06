@@ -1,0 +1,1001 @@
+#moochat_mobile{
+	position: fixed;
+    bottom: 60px;
+    right: 18px;
+    z-index: 250000;
+}
+.moochat_mobile_icon{
+	width: 48px;
+    height: 48px;
+    background-color: #4a90e2;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+.moochat_mobile_icon.offline{
+    background-color: #999;
+    width: auto;
+    border-radius: 4px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.moochat_mobile_online{
+	font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.moochat_mobile_icon > i{
+	color: #fff;
+    vertical-align: bottom;
+    font-size: 32px;
+    position: absolute;
+    left: 10px;
+    top: 9px;
+}
+span.moochat_mobile_message {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    background-color: #ff0000;
+    top: 6px;
+    right: 6px;
+}
+.moochat_new_count{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: #F5A623;
+    top: 15px;
+    right: 15px;
+    padding: 2px 3px;
+    border: 1px solid #D49123;
+}
+.moochat_popup,
+.moochat_mobile_list{
+	position: fixed;
+    top: 0px;
+    bottom: 0px;
+    background: #fff;
+    z-index: 10000;
+    left: 0;
+    right: 0;
+    overflow:auto;
+}
+.faceOutEffect .moochat_popup,
+.faceOutEffect .moochat_mobile_list{
+	top:0;
+	bottom: 0;
+}
+.moochat_mobile_header {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 15px;
+    position: relative;
+    background: #4A90E2;
+}
+ul.moochat_mobile_userlist {
+    list-style: none;
+    padding: 0;
+}
+ul.moochat_mobile_userlist li {
+    padding: 5px 15px;
+    position: relative;
+}
+ul.moochat_mobile_userlist li a {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.26);
+}
+ul.moochat_mobile_userlist li a:hover{
+	text-decoration: none;
+}
+ul.moochat_mobile_userlist li a img{
+    width:32px;
+    height:32px;
+}
+ul.moochat_mobile_userlist li a .name {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.87);
+    padding-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ul.moochat_mobile_userlist li a .right {
+    margin-left: 42px;
+    padding-right:30px;
+}
+ul.moochat_mobile_userlist li:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+ul.moochat_mobile_userlist li a .moochat_review_message {
+    margin: 5px 0;
+}
+.moochat_chatboxmessage {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+    word-break: normal;
+}
+.moochat_floatL {
+    float: left !important;
+}
+.moochat_chatboxmessagecontent {
+    margin-left: 42px;
+        max-width: 80%;
+}
+.moochat_chatboxmessagecontent  div.mooText {
+    background-color: #efefef;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    color: #4a4a4a;
+    display: inline-block;
+    font-size: 13px;
+    max-width: 100%;
+    padding: 5px;
+    word-wrap: break-word;
+    margin-top:10px;
+    text-align: left;
+}
+.moochat_chatboxmessagecontent div.mooText + div {
+    clear: both;
+}
+.moochat_chatboxmessagecontent.moochat_self div.mooText {
+    background-color: #4a90e2;
+    float: right;
+    color: #fff;
+    border: none;
+    white-space: pre-wrap;
+}
+.moochat_chatboxmessagecontent.moochat_self div.mooText > a{
+    color: #fff;
+}
+.moochat_chatboxmessagecontent > div.mooText div i{
+	color: rgba(0, 0, 0, 0.26);
+    font-size: 10px;
+}
+.moochat_username > div {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+}
+.moochat_username .moochat_status {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+}
+.moochat_option {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    color:#fff;
+}
+.moochat_main_message {
+    padding-top: 85px;
+    border-top: 1px solid #dfdfdf;
+    padding-bottom:67px;
+}
+.moochat_tabcontentinput {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 55px 15px 54px;
+    border-top:1px solid #C9D0DA;
+    background:#fff;
+}
+span.moochat_form_icon {
+    width: 32px;
+    height: 32px;
+    background-color: #4a90e2;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    position: absolute;
+    top:15px;
+    overflow: hidden;
+}
+span.moochat_form_icon i {
+    vertical-align: middle;
+}
+span.moochat_form_icon .moochat_buttonemoticon,
+span.moochat_form_icon > form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width:32px;
+    height:32px;
+}
+.moochat_iconlist{
+    position: fixed;
+    bottom: 67px;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    padding: 0 5px 10px;
+    text-align: left;
+}
+.moochat_camera{
+	left: 15px;
+}
+span.moochat_form_icon.moochat_emoji{
+	right: 52px;
+    background: none;
+    color: #999;
+}
+.moochat_send{
+	right: 15px;
+}
+.moochat_tabcontentinput input{
+	height: 32px;
+	width: 100%;
+}
+.chat-hide {
+    display: none;
+}
+.moochat_mobile_header:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.moochat_mobile_header > i{
+    color: #fff;
+    float: right;
+    margin-left: 10px;
+}
+.moochat_mobile_header select{
+    position: absolute;
+    opacity: 0;
+    right: 42px;
+    z-index: 2;
+    top: 10px;
+    width:50px;
+    height:50px;
+}
+.moochat_mobile_header > .moochat_username {
+    float: left;
+    color: #fff;
+}
+.moochat_search {
+    padding: 15px;
+}
+.moochat_search input {
+    width: 100%;
+    height: 40px;
+}
+.friend_title {
+    padding: 15px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.54);
+}
+.mooGroup_title {
+    padding: 15px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.54);
+}
+.mooGroup .moochat_userscontentavatar {
+     border: 1px solid #d4d4d4;
+     display: block;
+     float: left;
+     height: 32px;
+     width: 32px;
+        background: #fff none repeat scroll 0 0;
+        overflow: hidden !important;
+        position: relative;
+    box-sizing:content-box;
+ }
+.mooGroup .moochat_userscontentavatar img {
+    float: left;
+    height: 16px;
+    width: 16px;
+}
+.moochat_userscontentavatar.three_member > img:first-child {
+    float: left;
+    height: 32px;
+    margin-left: -50%;
+    width: 100%;
+}
+.mooGroup .moochat_userscontentavatar.two_member img:last-child{
+    height: 32px;
+    right: -50%;
+    position: absolute;
+    width: 100%;
+}
+.mooGroup .moochat_userscontentavatar.two_member img:first-child {
+    height: 32px;
+    left: -50%;
+    position: absolute;
+    width: 100%;
+}
+.moochat_userscontentdot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    float: none;
+    margin-left: 7px;
+    border-radius: 50%;
+}
+.moochat_offline{
+    background: #8d8d8d;
+}
+.moochat_available {
+    background: #0f9d28 none repeat scroll 0 0 !important;
+}
+textarea.moochat_textarea {
+    height: 31px!important;
+    width: 100%!important;
+    resize: none;
+    padding-right: 25px;
+}
+.moochat_chatboxmessagecontent.moochat_self{
+    float: right;
+        margin: 0;
+}
+.moochat_mobile_header.moochat_user_detail .moochat_username{
+    float: none;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.moochat_mobile_header.moochat_user_detail > select{
+    right:0;
+}
+.moochat_back{
+    position: absolute;
+    left:10px;
+}
+.moochat_mobile_header.moochat_user_detail {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 20;
+}
+.moochat_sentnotification i,
+span.moochat_time {
+    color: rgba(0, 0, 0, 0.26);
+    font-size: 10px;
+}
+.moochat_chatboxmessagecontent.only_emoji > div.mooText {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+}
+.moochat_chatboxmessagecontent .file_image {
+    border-radius: 8px;
+    max-height: 170px;
+    max-width: 110px;
+    vertical-align: inherit;
+    width: auto !important;
+}
+.only_emoji .iconos {
+    background-size: 640px 200px;
+    height: 32px;
+    width: 32px;
+}
+.only_emoji #a48{
+    background-position: -525px -84px;
+}
+.only_emoji #a20{
+    background-position: -84px -44px;
+}
+.only_emoji #a1{
+    background-position: -4px -5px;
+}
+.only_emoji #a41{
+    background-position: -244px -84px;
+}
+.only_emoji #a50{
+    background-position: -605px -84px;
+}
+.only_emoji #a24{
+    background-position: -244px -44px;
+}
+.only_emoji #a29{
+    background-position: -444px -44px;
+}
+.only_emoji #a52{
+    background-position: -4px -124px;
+}
+.only_emoji #a8{
+    background-position: -284px -4px;
+}
+.only_emoji #a39{
+    background-position: -165px -84px;
+}
+.only_emoji #a6{
+    background-position: -204px -4px;
+}
+.only_emoji #a4{
+    background-position: -164px -4px;
+}
+.only_emoji #a47{
+    background-position: -485px -85px;
+}
+.only_emoji #a42{
+    background-position: -284px -85px;
+}
+.only_emoji #a7{
+    background-position: -245px -4px;
+}
+.only_emoji #a3{
+    background-position: -84px -4px;
+}
+.only_emoji #a43{
+    background-position: -84px -124px;
+}
+.only_emoji #a37{background-position: -84px -84px;}
+.only_emoji #a35{background-position: -4px -84px;}
+.only_emoji #a15{background-position: -564px -4px;}
+.only_emoji #a33{background-position: -564px -44px;}
+.only_emoji #a72{background-position: -164px -124px;}
+.only_emoji #a19{background-position: -44px -44px;}
+.only_emoji #a53{    background-position: -44px -124px;}
+.only_emoji #a23{    background-position: -204px -44px;}
+.only_emoji #a18{background-position: -4px -44px;}
+.only_emoji #a57{background-position: -204px -124px;}
+.only_emoji #a77{    background-position: -404px -163px;}
+.only_emoji #a76{    background-position: -445px -124px;}
+.only_emoji #a2{    background-position: -124px -164px;}
+.only_emoji #a5{    background-position: -404px -124px;}
+.only_emoji #a9{    background-position: -565px -124px;}
+.only_emoji #a10{    background-position: -525px -124px;}
+.only_emoji #a11{    background-position: -607px -124px;}
+.only_emoji #a12{    background-position: -484px -124px;}
+.only_emoji #a13{    background-position: -365px -124px;}
+.only_emoji #a14{background-position: -285px -124px;}
+.only_emoji #a16{    background-position: -605px -164px;}
+.only_emoji #a17{    background-position: -284px -164px;}
+.only_emoji #a21{    background-position: -524px -164px;}
+.only_emoji #a22{    background-position: -445px -164px;}
+.only_emoji #a25{background-position: -164px -164px;}
+.only_emoji #a26{    background-position: -604px -4px;}
+.only_emoji #a27{    background-position: -444px -4px;}
+.only_emoji #a28{background-position: -204px -84px;}
+.only_emoji #a30{    background-position: -124px -84px;}
+.only_emoji #a31{    background-position: -484px -44px;}
+.only_emoji #a32{    background-position: -244px -164px;}
+.only_emoji #a34{    background-position: -204px -164px;}
+.only_emoji #a36{    background-position: -45px -4px;}
+.only_emoji #a38{    background-position: -125px -4px;}
+.only_emoji #a40{    background-position: -325px -4px;}
+.only_emoji #a44{    background-position: -404px -4px;}
+.only_emoji #a45{background-position: -524px -4px;}
+.only_emoji #a46{background-position: -244px -124px;}
+.only_emoji #a49{background-position: -564px -84px;}
+.only_emoji #a51{    background-position: -44px -164px;}
+.only_emoji #a54{    background-position: -86px -164px;}
+.only_emoji #a55{    background-position: -489px -164px;}
+.only_emoji #a56{background-position: -363px -84px;}
+
+.moochat_chatboxmessagecontent div.mooChat_miniNoticed {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #90949c;
+    font-size: 11px;
+    line-height: 14px;
+}
+.mooChat_miniNoticed i {
+    font-size: 12px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.moochat_tabcontentinput.not_send_file {
+    padding-left: 15px;
+}
+.not_send_emoj.moochat_tabcontentinput span.moochat_emoji,
+.moochat_tabcontentinput.not_send_file .moochat_camera {
+    display: none;
+}
+.not_send_emoj.moochat_tabcontentinput textarea {
+    padding-right: 5px;
+}
+.ReactModal__Overlay {
+    -webkit-perspective: 600;
+    perspective: 600;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+    transition: opacity 150ms ease-out;
+    z-index: 100001;
+    background: rgba(0, 0, 0, 0.5)!important;
+}
+
+.ReactModal__Content {
+    -webkit-transform: scale(0.5) rotateX(-30deg);
+    transform: scale(0.5) rotateX(-30deg);
+}
+
+.ReactModal__Content--after-open {
+    -webkit-transform: scale(1) rotateX(0deg);
+    transform: scale(1) rotateX(0deg);
+    transition: all 150ms ease-in;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.ReactModal__Content--before-close {
+    -webkit-transform: scale(0.5) rotateX(30deg);
+    transform: scale(0.5) rotateX(30deg);
+    transition: all 150ms ease-in;
+}
+
+.ReactModal__Content.modal-dialog {
+    border: none;
+    background-color: transparent;
+}
+.ReactModalPortal .modal-header{
+    padding:0;
+}
+.ReactModalPortal .modal-header h4{
+    font-size: 16px;
+    font-weight: bold;
+    background: #F4F4F4;
+    padding: 15px;
+    border-radius: 4px 4px 0 0;
+}
+
+.ReactModal__Content ul {
+    list-style:none;
+    padding:0;
+}
+.clear{
+    clear: both;
+}
+.ReactModal__Content textarea{
+    width:100%;
+}
+.btn-default{
+    background-color: #e5e5e5;
+}
+.btn-default:hover,.btn-default:active{
+    background-color: #eeeeee;
+}
+.ReactModalPortal .ReactModal__Content.modal-dialog{
+    margin:90px auto;
+}
+@-webkit-keyframes mercuryTypingAnimation{
+    0%{
+        -webkit-transform:translateY(0px)
+    }
+    28%{
+        -webkit-transform:translateY(-5px)
+    }
+    44%{
+        -webkit-transform:translateY(0px)
+    }
+}
+._5pd7{
+    -webkit-animation:mercuryTypingAnimation 1.5s infinite ease-in-out;
+    border-radius:2px;
+    display:inline-block;
+    height:4px;
+    margin-right:2px;
+    width:4px;
+}
+._5pd7:last-of-type{
+    margin-right:0;
+}
+._5pd7{
+    background-color:#999;
+}
+
+._5pd7:nth-child(1){
+    -webkit-animation-delay:200ms;
+}
+._5pd7:nth-child(2){
+    -webkit-animation-delay:300ms;
+}
+._5pd7:nth-child(3){
+    -webkit-animation-delay:400ms;
+}
+.chatTyping_text{
+    display: inline-block;
+    background: #fff;
+    height: 23px;
+    line-height: 23px;
+    padding: 0 7px;
+    border-radius: 10px;
+    border: 1px solid #dfdfdf;
+    margin-top: 3px;
+}
+.chatTyping_content {
+    padding: 5px;
+}
+.chatTyping_content > a{
+    margin-right:5px;
+}
+
+.chat-spinner {
+    margin: 5px auto 0;
+    width: 70px;
+    text-align: center;
+}
+
+.chat-spinner > div {
+    width: 9px;
+    height: 9px;
+    background-color: #dfdfdf;
+
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.chat-spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.chat-spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+.moochat_mobile_header .moochat_username img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+ul.chat-content-list {
+    list-style: none;
+    padding: 0;
+}
+ul.chat-content-list > li > a {
+    float: left;
+}
+ul.chat-content-list > li > a > img {
+    width: 32px;
+    height: 32px;
+}
+ul.chat-content-list li .chat-info {
+    margin-left: 40px;
+}
+ul.chat-content-list li .list_option{
+    font-size: 10px;
+    right: 10px;
+    top: 10px;
+    color: rgba(0,0,0,0.87);
+}
+ul.chat-content-list li .chat-info .list-item-description{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.26);
+}
+div#rooms-list {
+    padding: 10px;
+}
+.rooms-item span.moochat_userscontentavatar {
+    float: left;
+}
+.rooms-item span.moochat_userscontentavatar img {
+    width: 32px;
+    height: 32px;
+}
+ul.chat-content-list li .chat-info a {
+    color: rgba(0,0,0,0.84);
+    font-weight: bold;
+}
+.rooms-item:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.rooms-item {
+    padding: 5px 0;
+}
+.rooms-item .room-name {
+    margin-left: 45px;
+}
+table.uiGrid._51mz {
+    width: 100%;
+}
+.moochat_popup div.tt-menu{
+    width: 100%;
+    background: #fff;
+    font-size: 13px;
+    color: #000;
+    font-weight: bold;
+/*    border: 1px solid #dfdfdf;*/
+    padding: 0;
+}
+table.uiGrid._51mz input.tt-input{
+    border: none;
+    font-size: 14px;
+    height: 26px;
+    padding: 0 4px;
+}
+.moochat_popup div.tt-menu img {
+    width: 25px;
+    height: 25px;
+    margin-right:5px;
+}
+.suggestion-item.tt-suggestion {
+    padding: 5px;
+}
+table.uiGrid._51mz .doneButton{
+    float: right;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+table.uiGrid._51mz .doneButton input{
+    padding:7px;
+}
+table.uiGrid._51mz .twitter-typeahead{
+    vertical-align: middle;
+}
+table.uiGrid._51mz .innerWrap{
+    background: #fff;
+    padding: 0px 5px;
+    line-height: 20px;
+    min-height: 31px;
+}
+table.uiGrid._51mz .innerWrap .bootstrap-tagsinput > span{
+    vertical-align: middle;
+    margin: 2px;
+    float: left;
+}
+table.uiGrid._51mz .innerWrap .bootstrap-tagsinput > span.label{
+    background-color: #e9e9e9;
+    border: 1px solid #d0d0d0;
+    color: #4a4a4a;
+    padding: 6px 5px;
+}
+table.uiGrid._51mz .innerWrap .bootstrap-tagsinput > span.label span[data-role='remove']:after {
+    content: 'x';
+    padding: 0 5px;
+}
+table.uiGrid._51mz .innerWrap .bootstrap-tagsinput > span.twitter-typeahead{
+    position: static!important;
+}
+input.tt-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+._51mx{
+    position: relative;
+    display: block;
+    padding-right: 53px;
+}
+td._51m-.vTop._51mw {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+td._51m-.vTop._54__ {
+    display: block;
+    width: 100%;
+}
+table.uiGrid._51mz .innerWrap .bootstrap-tagsinput input.tt-hint{
+    display: none;
+}
+table.uiGrid._51mz .innerWrap:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.moochat_block_message {
+    font-size: 12px;
+    color: #fff;
+    padding: 5px 0 0;
+    text-align: center;
+}
+._54_-.moochat_block_message a {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+#appChat .bootstrap-tagsinput {
+    background: none;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+}
+#appChat .tt-suggestion .text{
+    margin-left:35px;
+}
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 40% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+      }
+}
+.friendChatAll{
+    padding-right: 114px;
+}
+.closeChatMobile{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: #fff;
+}
+.optionChatMobile{
+    right: 46px;
+    position: absolute;
+    top: 15px;
+    
+}
+.optionChatMobile i{
+    color: #fff;
+}
+.searchChatMobile{
+    position: absolute;
+    top: 15px;
+    right: 77px;
+    color: #fff;
+}
+.moochat_mobile_header.friendChatAll select{
+    width: 40px;
+    right: -12px;
+    top: -11px;
+}
+.moochat_mobile_header.friendChatAll .moochat_username{
+    float: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.moochat_link_attach{
+    padding:0;
+        bottom: 62px;
+}
+.mooText_linkparse > span,
+.moochat_link_attach > span{
+    display: block;
+    float: left;
+    width: 72px;
+    height: 72px;
+    background-size: cover;
+    background-position: center;
+}
+.linkcontent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 72px;
+    padding: 0 4px;
+        text-align: left;
+}
+.videoParseDetail > div:first-child,
+.linkcontent > div:first-child{
+    font-weight: bold;
+    line-height: 16px;
+    max-height: 32px;
+    overflow: hidden;
+        margin-bottom: 4px;
+}
+.moochat_link_attach .remove_review_link{
+    position: absolute;
+    right: -5px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    top: -5px;
+}
+.remove_review_link i{
+    font-size: 14px;
+    color: #ccc;
+    vertical-align: middle;
+}
+.videoParseDetail > div:last-child,
+.linkcontent > div:last-child{
+    max-height: 16px;
+    overflow: hidden;
+        line-height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.moochat_iconlist span:hover{
+    background-color: #f1f1f1 ;
+}
+.moochat_iconlist .iconos{
+    padding:1px;
+}
+.moochat_tabtitle i.material-icons{
+    font-size: 17px;
+}
+.moochat_chatboxmessagecontent div.mooText.mooText_videoparse,
+.moochat_chatboxmessagecontent  > div.mooText.mooText_linkparse{
+    padding:0;
+        margin-top: 1px;
+}
+.linkvideoContent {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.linkvideoContent iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.videoParseDetail {
+    padding: 4px;
+    text-align: left;
+}
+#moochat .mooText_linkPhotoparse > a{
+    display: block;
+     margin-top: 1px;
+        clear: both;
+    border: solid 1px #cbdaeb;
+        border-radius: 4px;
+    overflow: hidden;
+}
+#moochat .mooText_linkPhotoparse .file_image{
+    max-width: 100%;
+    max-height: none!important;
+   display: block;
+}
+.mooText_linkPhotoparse {
+    padding-top: 1px;
+}
+.moochat_link_attach{
+    position: fixed;
+    bottom: 65px;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    padding: 0;
+    text-align: left;
+}
+div#moochat .moochat_mobile_header  i.material-icons {
+    font-size: 24px;
+}

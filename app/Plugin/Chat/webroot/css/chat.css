@@ -1,0 +1,3798 @@
+html {
+    overflow-y: -moz-scrollbars-vertical
+}
+
+body {
+    padding-bottom: 30px
+}
+
+#moochat {
+    font-size: medium;
+    font-size-adjust: none;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    z-index: 100000;
+    direction: ltr
+}
+
+#moochat_base, #moochat_base *, .moochat_chatboxmessage {
+    overflow: visible
+}
+
+.moochat_container_body, .moochat_container_body *:after, .moochat_container_body *:before, .moochat_container, .moochat_container *:after, .moochat_container *:before {
+    content: none !important;
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing: initial
+}
+
+#moochat * {
+    box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+}
+
+.CCReceiveError {
+    display: none !important
+}
+
+#moochat_hidden * {
+    box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+}
+
+#moochat *:after, #moochat *:before {
+    /*content: none !important*/
+}
+
+#moochat_base {
+    margin-left: 1px;
+    bottom: 0;
+    display: block;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    height: 35px;
+    left: 15px;
+    position: fixed;
+    z-index: 100000
+}
+
+#moochat_chatboxes, #moochat_chatboxes_popup {
+    float: right;
+    height: 100%;
+    overflow: hidden
+}
+
+#moochat_chatboxes_wide {
+    height: 100%;
+    width: 0;
+    overflow: hidden
+}
+
+#moochat_chatbox_left {
+    width: auto;
+    margin-right: 5px;
+    background-color: rgba(242, 242, 242, 0.87);
+    border: solid 1px #aaaaaa;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: 0 !important;
+    color: #333;
+    display: none;
+    font-weight: bold;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10001
+}
+
+.moochat_chatbox_lr_mouseover {
+    background: #fafbfb !important
+}
+
+#moochat_optionsbutton {
+    float: right;
+    width: 20px;
+    height: auto;
+    line-height: normal;
+    padding: 0 !important;
+    border: 0;
+    border-top: 1px solid #D1D2D4;
+    background: #FFFFFF !important
+}
+#moochat_optionsbutton .moochat-option-content{
+    position: absolute;
+    bottom: 29px;
+    right: 0;
+    background: #fff;
+    width: 169px;
+    border: 1px solid #dfdfdf;
+    border-bottom: none;
+    padding:15px 0;
+}
+.moochat-option-content > div {
+    padding: 0 15px;
+}
+.moochat-option-content > div:hover{
+    background:#4E6AAB;
+    color:#fff;
+}
+.moochat-option-content > div:hover span{
+    color: #fff;
+}
+.moochat-option-content > div.seperate{
+    margin:0 15px 5px;
+}
+.moochat-option-content > div.seperate:hover{
+    background: none;;
+}
+.moochat-option-content div span {
+    font-size: 12px;
+    line-height: 2.0;
+    color: #000000;
+}
+.moochat-option-content div:hover span{
+    border:none;
+}
+#moochat_optionsbutton.moochat_tabclick {
+    border-top-color: #E9EAED !important;
+    background: #E9EAED !important;
+    border-bottom: none !important;
+    width: 20px;
+    padding-left: 7px !important;
+    padding-top: 1px !important
+}
+.moochat-option-content > div:hover span.moochat_icon_checked{
+    background-position: left -59px;
+}
+#moochat_userstab {
+    bottom: 0;
+    direction: ltr;
+    position: fixed;
+    right: 0;
+    z-index: 3000;
+    margin: 0 15px 0 0;
+    background: #F6F6F8;
+    background: -moz-linear-gradient(top, #F6F6F8 0%, #F2F3F4 44%, #EEEFF0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F6F6F8), color-stop(44%, #F2F3F4), color-stop(100%, #EEEFF0));
+    background: -webkit-linear-gradient(top, #F6F6F8 0%, #F2F3F4 44%, #EEEFF0 100%);
+    background: -o-linear-gradient(top, #F6F6F8 0%, #F2F3F4 44%, #EEEFF0 100%);
+    background: -ms-linear-gradient(top, #F6F6F8 0%, #F2F3F4 44%, #EEEFF0 100%);
+    background: linear-gradient(to bottom, #F6F6F8 0%, #F2F3F4 44%, #EEEFF0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F6F6F8', endColorstr='#EEEFF0', GradientType=0);
+    border: 1px solid #AAB1C0 !important;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: 0 !important;
+    color: #333 !important;
+    display: block;
+    font-weight: bold;
+    height: 16px;
+    outline: none;
+    padding: 10px 4px !important;
+    width: 200px !important
+}
+
+.moochat_userstabclick {
+    display: none !important
+}
+
+.moochat_closebox {
+    font-size: 21px;
+    float: right;
+    height: 16px;
+    line-height: 17px;
+    width: 13px;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7
+}
+
+.moochat_maxwindow {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: -3px -1175px;
+    float: right;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    margin-right: 2px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.moochat_popwindow {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: -1px -1112px;
+    float: right;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    height: 16px;
+    width: 16px;
+    margin-right: 2px
+}
+
+.moochat_closebox:hover, .moochat_maxwindow:hover, .moochat_popwindow:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+.moochat_closebox_bottom {
+    float: right;
+    height: 15px;
+    width: 15px;
+    font-size: 20px;
+    margin-top: 2px;
+    color: #8D919A;
+    visibility: hidden
+}
+.moochat_closebox_bottom i {
+    font-size: 15px;
+}
+.moochat_closebox_bottomhover {
+    color: #6E7077 !important
+}
+
+.moochat_name {
+    cursor: pointer;
+    color: #FFFFFF;
+    float: left;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    padding-left: 2px;
+    line-height: 15px
+}
+
+.moochat_name:hover {
+    text-decoration: underline
+}
+
+#moochat_chatbox_buttons {
+    float: right
+}
+
+.moochat_tabmouseover {
+    color: #FFFFFF !important;
+    background-color: #EDEFF4 !important
+}
+
+.moochat_tabmouseovertext {
+    text-decoration: none
+}
+
+.moochat_statusinputs {
+    border-top: 1px solid #D1D2D4;
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-top: 4px;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit
+}
+
+#moochat_chatboxes_wide .moochat_tab {
+    margin-right: 3px;
+    background: #F6F6F8;
+    background: -moz-linear-gradient(top, #F6F6F8 0%, #F2F3F4 44%, #EEEFF0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F6F6F8), color-stop(44%, #F2F3F4), color-stop(100%, #EEEFF0));
+    background: -webkit-linear-gradient(top, #F6F6F8 0%, #F2F3F4 44%, #EEEFF0 100%);
+    background: -o-linear-gradient(top, #F6F6F8 0%, #F2F3F4 44%, #EEEFF0 100%);
+    background: -ms-linear-gradient(top, #F6F6F8 0%, #F2F3F4 44%, #EEEFF0 100%);
+    background: linear-gradient(to bottom, #F6F6F8 0%, #F2F3F4 44%, #EEEFF0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F6F6F8', endColorstr='#EEEFF0', GradientType=0);
+    border: 1px solid #AAB1C0 !important;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: 0 !important;
+    -webkit-box-shadow: 0 1px 1px #A2A3A5;
+    -moz-box-shadow: 0 1px 1px #A2A3A5;
+    box-shadow: 0 1px 1px #A2A3A5;
+    color: #333;
+    display: block;
+    font-weight: bold;
+    height: 167px;
+    outline: none;
+    padding: 9px 5px;
+    display:flex;
+}
+
+#moochat_chatboxes_wide .moochat_tab:hover {
+    background-color: #F6F7F8 !important;
+    color: #333 !important
+}
+
+#moochat_chatboxes_wide .moochat_tab:hover .moochat_closebox_bottom {
+    visibility: visible
+}
+
+.moochat_tab {
+    background-color: #4E6AAB;
+    border-top: 1px solid #2E4588;
+    border-left: 1px solid #2E4588;
+    border-right: 1px solid #2E4588;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-weight: normal;
+    height: 35px;
+    line-height: 1.2em;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    width: 148px
+}
+
+.moochat_tabclick {
+    background-color: #EDEFF4 !important;
+    border-top: 0 !important;
+    border-bottom: 1px solid #A2A3A5 !important;
+    border-left: 1px solid #A2A3A5 !important;
+    border-right: 0 !important;
+    color: #111111 !important;
+    padding-bottom: 1px;
+    padding-top: 10px !important;
+    text-decoration: none
+}
+
+.moochat_usertabclick {
+    padding-left: 9px !important;
+    width: 213px !important;
+}
+
+.moochat_tabpopup {
+    background-color: #EDEFF4;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    position: fixed;
+    width: 230px;
+    z-index: 100001;
+    bottom: 34px;
+    -webkit-box-shadow: 0 1px 1px #A2A3A5;
+    -moz-box-shadow: 0 1px 1px #A2A3A5;
+    box-shadow: 0 1px 1px #A2A3A5
+}
+
+#moochat_userstab_popup {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 25px;
+    background-color: #E9EAED;
+    overflow: hidden;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important
+}
+
+#moochat_userstab_popup:after {
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.07)
+}
+
+#moochat_optionsbutton_popup {
+    width: 205px;
+    bottom: 25px;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    right: 20px
+}
+
+#moochat_auth_popup {
+    width: 205px;
+    border-bottom: 1px solid #A2A3A5;
+    z-index: 99999;
+    position: fixed !important;
+    bottom: 0;
+    right: 20px;
+    margin-right: 7px
+}
+
+img.auth_options {
+    display: block;
+    height: 36px;
+    margin: 10px auto;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 3px #666666;
+    -moz-box-shadow: 0 1px 3px #666666;
+    box-shadow: 0 1px 3px #666666;
+    cursor: pointer;
+    position: relative
+}
+
+img.auth_options:hover {
+    left: 1px;
+    top: -1px;
+    -webkit-box-shadow: 0 2px 4px #666666;
+    -moz-box-shadow: 0 2px 4px #666666;
+    box-shadow: 0 2px 4px #666666
+}
+
+img.auth_options:active {
+    left: 0;
+    top: 0;
+    -webkit-box-shadow: 0 0 1px #666666;
+    -moz-box-shadow: 0 0 1px #666666;
+    box-shadow: 0 0 1px #666666
+}
+
+.social_options {
+    width: 100%;
+    position: relative;
+    display: table;
+    height: 100%;
+    background: #FFFFFF;
+    z-index: 10000000
+}
+
+.social_login {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.moochat_tabopen {
+    display: block !important
+}
+
+.moochat_tabtitle {
+    background-color: #4E6AAB;
+    background: -moz-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4E6AAB), color-stop(44%, #4966A7), color-stop(100%, #4B67A8));
+    background: -webkit-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    background: -o-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    background: -ms-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    background: linear-gradient(to bottom, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4E6AAB', endColorstr='#4B67A8', GradientType=0);
+    border: 1px solid #2E4588;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #FFFFFF;
+    padding: 6px 7px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 16px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    min-height: 22px;
+    position: relative;
+    z-index: 2;
+}
+
+.moochat_tabtitle:hover, .moochat_userstabtitle:hover, .moochat_new_message_titlebar {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1;
+}
+
+.moochat_userstabtitle {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 0px 8px;
+    height:36px;
+    background: #4E6AAB;
+    background: -moz-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4E6AAB), color-stop(44%, #4966A7), color-stop(100%, #4B67A8));
+    background: -webkit-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    background: -o-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    background: -ms-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    background: linear-gradient(to bottom, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4E6AAB', endColorstr='#4B67A8', GradientType=0);
+    border: 1px solid #2E4588;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    opacity: 0.9
+}
+
+.moochat_userstabtitle div {
+    color: #FFFFFF
+}
+
+.moochat_userstabtitletext {
+    float: left;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 10px 8px;
+}
+
+.moochat_tabsubtitle {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #D1D2D4;
+    border-left: 1px solid #A2A3A5;
+    border-right: 1px solid #A2A3A5;
+    color: #111111;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.3em !important;
+    padding: 5px 0;
+    text-align: center;
+    clear: both;
+}
+
+.moochat_plugins_name {
+    width: 170px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.moochat_pluginsicon {
+    cursor: pointer;
+    float: left;
+    margin-right: 6px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    color: #BDBDBD;
+
+}
+.moochat_tabtitle .moochat_pluginsicon i.material-icons{
+    font-size: 15px;
+}
+.moochat_buttonicon {
+    cursor: pointer;
+    float: left;
+    margin-right: 6px;
+    height: 24px;
+    width: 24px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    color:#BDBDBD;
+}
+.moochat_buttonicon:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1
+}
+.moochat_icon_more {
+
+    background: url(themes/facebook/images/moochat_button_icon_more.png) no-repeat ;
+    background-size: auto;
+    cursor: pointer;
+    display:inline-block;
+    margin-right: 6px;
+    height: 16px;
+    width: 16px;
+}
+.moochat_icon_more_2 {
+    cursor: pointer;
+    float: left;
+    margin-right: 6px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7
+}
+.moochat_icon_more_2:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+.moochat_icon_checked {
+    background: url(themes/facebook/images/moochat_button_icon_more_4.png) left 2px no-repeat ;
+    font-weight: bold;
+}
+
+.moochat_pluginsicon:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+.moochat_menu_user_settings_poup{
+    border: solid #fff;
+    border-width: 1px 0;
+    color: #1d2129;
+    padding-left: 22px;
+}
+.moochat_pluginsicon_divider {
+    margin-right: 5px
+}
+
+.moochat_tabcontent {
+    color: #111111;
+    border: 1px solid #A2A3A5;
+    border-width: 0 1px;
+    background-color: #E9EAED;
+    line-height: 1.3em !important;
+    overflow: hidden;
+    padding-bottom: 1px;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    z-index: 99999;
+    height: 399px !important;
+}
+
+.moochat_tabcontentsubmit {
+    display: none
+}
+
+.moochat_tabcontenttext {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap !important;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: -hp-pre-wrap;
+    white-space: pre-line;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+    color: inherit;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    width: 230px !important;
+    background: #f4f4f4;
+    height: 210px;
+}
+
+#moochat_userscontent {
+    height: 100%;
+    line-height: 100% !important;
+    width: 100% !important;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.moochat_tabcontentinput {
+    border: 0;
+    border-top: 1px solid #C9D0DA;
+    outline: none;
+    padding: 5px;
+    overflow: hidden;
+    background: #FFF
+}
+.moochat_tabcontentinput .mooChatForm{
+    padding-bottom: 7px;
+    overflow: hidden;
+}
+textarea.moochat_textarea {
+    border: none !important;
+    color: #3E454C !important;
+    float: left;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    height: 16px;
+    outline: none;
+    overflow: hidden;
+    padding: 0;
+    resize: none;
+    width: 220px;
+    padding-top: 2px;
+    line-height: normal !important;
+    margin-bottom: 3px;
+}
+
+textarea.moochat_textarea:focus {
+    border: none !important;
+    outline:none!important;
+    box-shadow: none!important;
+}
+
+.moochat_userlist_hover {
+    background-color: #E1E2E5 !important;
+    border-color: #D5D6D9 !important;
+    text-decoration: none;
+    -webkit-box-shadow: inset 2px 0 2px -2px #B2B9C9;
+    -moz-box-shadow: inset 2px 0 2px -2px #B2B9C9;
+    box-shadow: inset 2px 0 2px -2px #B2B9C9
+}
+
+.moochat_tooltip_content {
+    background-color: #282828;
+    color: #FFFFFF;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    white-space: nowrap;
+    word-wrap: break-word;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px
+}
+
+#moochat_tooltip:after {
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    border-right: 5px solid rgba(0, 0, 0, 0);
+    border-top: 5px solid #282828;
+    bottom: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 14px;
+    width: 0
+}
+
+.moochat_userlist {
+    cursor: pointer;
+    height: 32px;
+    line-height: 100%;
+    padding: 2px 8px 2px 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    clear: both
+}
+
+.moochat_userscontentname {
+    float: left;
+    line-height: 32px;
+    padding-left: 8px
+}
+
+.moochat_userscontentdot {
+    background-position: 0 2px;
+    background-repeat: no-repeat;
+    float: right;
+    height: 7px;
+    margin: 5px 4px 4px 4px;
+    width: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-radius: 50%;
+}
+
+.moochat_available {
+    background: #0F9D28 !important
+}
+
+.moochat_away {
+    background: #FF921C !important
+}
+
+.moochat_busy {
+    background: #FF1B29 !important
+}
+
+.moochat_offline {
+    background: #8D8D8D !important
+}
+
+.moochat_blocked {
+    background-image: url(themes/facebook/images/block-gray.png);
+    background-size: 12px 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 0;
+    margin: 0;
+    margin-top: 9px !important;
+    background-position: 0 0
+}
+
+.moochat_tabtitle .moochat_blocked {
+    background-image: url(themes/facebook/images/block-white.png);
+    margin-top: 1px !important;
+    margin-right: 2px !important
+}
+
+.moochat_tab .moochat_blocked {
+    margin-top: 3px !important;
+    margin-right: 2px !important
+}
+
+#moochat_tooltip {
+    display: none;
+    padding-bottom: 4px;
+    position: fixed;
+    z-index: 900001
+}
+
+.moochat_tooltip_left {
+    background-position: left bottom !important
+}
+
+.moochat_closebox_bottom_status {
+    background-position: 0 -1px;
+    background-repeat: no-repeat;
+    float: left;
+    height: 16px;
+    width: 16px
+}
+
+.moochat_icon {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 0 -536px;
+    height: 16px;
+    width: 16px;
+    float: left
+}
+
+.moochat_tabalert {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 0 -532px;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    font-size: 8px;
+    font-weight: bold;
+    height: 18px;
+    padding-top: 3px;
+    position: absolute;
+    text-align: center;
+    width: 16px;
+    text-shadow: none;
+    margin-top: -14px !important;
+    margin-left: -10px !important
+}
+
+.moochat_tabalertlr {
+    margin-right: 5px;
+    float: left;
+    color: #3D76B9;
+}
+
+.moochat_tabtext {
+    margin-top: 2px;
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+    float:left;
+}
+
+.moochat_chatboxmessage {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    word-break: normal;
+    overflow: hidden;
+    position: relative;
+    margin: 5px
+}
+
+.moochat_chatboxmessagefrom {
+    font-weight: bold;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    width: 32px;
+    float: left
+}
+
+.moochat_self {
+    padding: 5px 4px;
+    position: relative;
+    text-align: right;
+}
+
+.moochat_self_avatar {
+    margin-left: 0;
+    margin-right: -1px !important
+}
+
+.moochat_chatboxmessagecontent > div{
+    background-color: #efefef;
+    border: solid 1px #d6d6d6;
+    font-size: 12px;
+    color: #4a4a4a;
+    padding: 5px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+
+    display: inline-block;
+}
+.moochat_chatboxmessagecontent{
+    margin-left:5px;
+}
+.moochat_chatboxmessagecontent.moochat_self{
+    margin-left:0;
+}
+.moochat_chatboxmessagecontent.moochat_self  > div{
+    background-color: #edf9ff;
+    border: solid 1px #cbdaeb;
+
+}
+.moochat_chatboxmessagecontent.only_emoji > div{
+    background:none;
+    border:none;
+}
+textarea.moochat_statustextarea {
+    border: 1px solid #D1D2D4;
+    color: #111111;
+    background: #FFFFFF;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    height: 42px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    outline: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 4px;
+    resize: none;
+    width: 184px
+}
+
+.moochat_statusmessagecount {
+    display: none;
+    float: right;
+    color: #111111
+}
+
+input.moochat_search {
+    border: 1px solid #C9D0DA;
+    color: #111111;
+    background: #EDEFF4;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    outline: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 4px;
+    width: 100%
+}
+
+input#moochat_search {
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    background-color: #FFFFFF;
+    color: #3E454C;
+    height: 27px;
+    padding-left: 5px;
+    padding-right: 25px;
+    border: 0;
+    outline: 0;
+    width: 183px
+}
+
+.moochat_search_light {
+    width: 130px;
+    color: #3E454C !important
+}
+
+.moochat_optionsstatus {
+    cursor: pointer;
+    float: left;
+    padding-left: 6px;
+    padding-top: 1px;
+    width: 67px
+}
+
+.moochat_optionsstatus2 {
+    float: left;
+    padding-left: 10px
+}
+
+.moochat_tabsubtitle a {
+    color: #111111 !important
+}
+
+.moochat_tabcontent a {
+    color: #288597 !important
+}
+
+.moochat_user_invisible {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 10px -890px !important;
+    height: 16px;
+    width: 16px
+}
+
+#moochat_optionsbutton_popup .invisible {
+    display: block !important;
+    visibility: visible !important
+}
+
+.moochat_user_available {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 0 -752px !important;
+    height: 16px;
+    width: 16px;
+    float: left
+}
+
+#moochat_userstab_icon {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 0 -753px;
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin: 0 5px
+}
+
+.moochat_user_invisible2 {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 0 -891px !important
+}
+
+.moochat_user_offline2 {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 0 -891px !important
+}
+
+.moochat_user_available2 {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 0 -753px !important
+}
+
+.moochat_user_busy2 {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 0 -799px !important
+}
+
+.moochat_user_away2 {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 0 -845px !important
+}
+
+.moochat_optionsimages {
+    height: 28px;
+    width: 28px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    display: block;
+    color: #BDBDBD;
+    line-height: 28px;
+}
+.moochat_optionsimages i{
+    font-size: 17px;
+    vertical-align: middle;
+}
+.moochat_optionsimages_exclamation {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 9px -261px !important;
+    background-color: #4E6AAB
+}
+
+.moochat_optionsimages_ccauth {
+    background: url(themes/facebook/images/login.png) no-repeat top left;
+    background-color: #4E6AAB;
+    background-position: 9px 6px;
+    opacity: 0.6
+}
+
+.moochat_smiley {
+    vertical-align: -3px;
+    display: inline-block
+}
+
+.moochat_traypopup {
+    background-color: #EDEFF4;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    position: fixed;
+    z-index: 100001;
+    bottom: 25px
+}
+
+.moochat_traytitle {
+    background-color: #4E6AAB !important;
+    border-left: 1px solid #A2A3A5;
+    border-right: 1px solid #A2A3A5;
+    border-top: 1px solid #A2A3A5;
+    color: #FFFFFF;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    padding-right: 0
+}
+
+.moochat_traycontent {
+
+    background-image: url(themes/facebook/images/tabbottom_tray.gif);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    border-left: 1px solid #A2A3A5;
+    border-right: 1px solid #A2A3A5;
+    color: #111111;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 1px
+}
+
+.moochat_traycontenttext {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    position: relative
+}
+
+.moochat_trayclick {
+    background-color: #EDEFF4 !important;
+    border-bottom: 1px solid #A2A3A5 !important;
+    border-left: 1px solid #A2A3A5 !important;
+    border-right: 1px solid #A2A3A5 !important;
+    color: #111111 !important;
+    margin-left: 0;
+    padding-bottom: 1px;
+    padding-top: 4px !important;
+    text-decoration: underline
+}
+
+.moochat_traytitle .moochat_minimizebox {
+    margin-right: 6px
+}
+
+.moochat_userstabtitle .moochat_minimizebox {
+    margin-right: 2px;
+    width: 24px;
+    height: 24px;
+    padding: 6px 0;
+}
+
+.moochat_minimizebox {
+    cursor: pointer;
+    float: right;
+    height: 12px;
+    width: 14px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5
+}
+
+#moochat_authlogout {
+    cursor: pointer;
+    background: url(themes/facebook/images/logout.png) no-repeat top left;
+    float: right;
+    height: 15px;
+    width: 16px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5
+}
+
+.moochat_popout {
+    cursor: pointer;
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 1px -1114px;
+    float: right;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5
+}
+
+.moochat_minimizebox:hover, .moochat_popout:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+.moochat_chatboxtraytitlemouseover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+.moochat_star {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 4px -1068px;
+    height: 16px;
+    width: 16px
+}
+
+.moochat_star_empty {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 0 -1150px;
+    height: 16px;
+    width: 16px
+}
+
+.moochat_star_half {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 0 -1196px;
+    height: 16px;
+    width: 16px
+}
+
+.moochat_name a, .moochat_name a:link, .moochat_name a:visited {
+    color: #FFFFFF;
+    float: left;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: capitalize
+}
+
+.moochat_name a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: capitalize
+}
+
+.moochat_avatar {
+    border: 1px solid #D1D2D4;
+    height: 28px
+}
+
+.moochat_avatarbox {
+    float: left;
+    padding-right: 5px
+}
+
+.moochat_ts {
+    color: #D1D2D4;
+    cursor: default;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-top: 2px
+}
+
+.moochat_message_name {
+    color: #D1D2D4;
+    cursor: default;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-top: 2px;
+    text-transform: capitalize
+}
+
+.moochat_ts_date {
+    display: none
+}
+
+.moochat_optionstyle {
+    padding: 5px;
+    padding-bottom: 10px
+}
+
+.moochat_tabstyle {
+    height: 100%;
+    background-color: #EEEFF0;
+    border: 0;
+    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+}
+
+.selfMsgArrow {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 8px;
+    background-color: transparent;
+    height: 13px;
+    overflow: hidden
+}
+
+.msgArrow {
+    left: 33px;
+    top: 10px;
+    position: absolute;
+    width: 8px;
+    background-color: transparent;
+    height: 13px;
+    overflow: hidden
+}
+
+.selfMsgArrow .after {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: #D6E7FE;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand',M11=0.7071067811865476,M12=-0.7071067811865475,M21=0.7071067811865475,M22=0.7071067811865476)";
+    top: 2px;
+    left: -5px;
+    -webkit-box-shadow: 0 0 1px 0 rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0 0 1px 0 rgba(50, 50, 50, 0.75);
+    box-shadow: 0 0 1px 0 rgba(50, 50, 50, 0.75)
+}
+
+.msgArrow .after {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: #F7F7F7;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand',M11=0.7071067811865476,M12=-0.7071067811865475,M21=0.7071067811865475,M22=0.7071067811865476)";
+    top: 2px;
+    left: 4px;
+    -webkit-box-shadow: 0 0 1px 0 rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0 0 1px 0 rgba(50, 50, 50, 0.75);
+    box-shadow: 0 0 1px 0 rgba(50, 50, 50, 0.75)
+}
+
+.moochat_typing {
+    background-image: url(themes/facebook/images/pencil.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: none;
+    float: left;
+    height: 13px;
+    width: 16px
+}
+
+.moochat_buddylist_typing {
+    background-image: url(themes/facebook/images/pencil_buddylist.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: none;
+    margin-top: 8px;
+    margin-left: 3px;
+    float: left;
+    height: 13px;
+    width: 16px
+}
+
+.moochat_sentnotification {
+    display: inline-block;
+    margin-left: 5px;
+}
+.moochat_time,
+.moochat_sentnotification i {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.26);
+}
+.moochat_deliverednotification {
+    background-image: url(themes/facebook/images/delivered.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 5px;
+    height: 8px;
+    width: 14px
+}
+
+.moochat_readnotification {
+    background-image: url(themes/facebook/images/read.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 5px;
+    height: 8px;
+    width: 14px
+}
+
+.moochat_userscontentavatar {
+    display: block;
+    float: left;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #d4d4d4;
+}
+
+.moochat_userscontentavatarimage {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C6C7C9
+}
+
+.moochat_notification_avatar_image {
+    height: 25px;
+    width: 25px
+}
+
+.moochat_notification {
+    border-top: 1px dotted #D3D7DC;
+    cursor: pointer;
+    margin-top: 6px;
+    padding-top: 4px;
+    width: 176px
+}
+
+.moochat_notification:first-child {
+    border-top: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    width: 176px
+}
+
+.moochat_notification_avatar {
+    float: left;
+    padding-right: 6px;
+    padding-top: 2px;
+    width: 25px
+}
+
+.moochat_notification_message {
+    float: left;
+    white-space: normal;
+    width: 144px
+}
+
+.moochat_notification_status {
+    color: #EEEEEE;
+    display: none;
+    font-size: 10px
+}
+
+.moochat_statusbutton {
+    background-color: #F6F7F8 !important;
+    border: 1px solid #AAB1C0 !important;
+    color: #333;
+    cursor: pointer;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 85px;
+    height: 18px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 18px;
+    float: left
+}
+
+div.moochat_guestnamebutton {
+    background-color: #4E6AAB !important;
+    border: 1px solid #2E4588;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 3px 4px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 68px;
+    display: inline-block;
+    margin-top: 3px;
+    height: 14px
+}
+
+#guestsname input.moochat_guestnametextbox {
+    border: 1px solid #D1D2D4;
+    color: #111111;
+    background: #FFFFFF;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    outline: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 4px;
+    display: inline-block;
+    resize: none;
+    width: 100px
+}
+
+.moochat_user_busy {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 0 -798px !important;
+    height: 16px;
+    padding-left: 0 !important;
+    width: 16px
+}
+
+.moochat_announcement {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    white-space: normal;
+    width: 200px;
+    padding: 6px;
+    text-align: left
+}
+
+.moochat_announcement * {
+    max-width: 100%
+}
+
+.moochat_tooltip_content a {
+    border-bottom: 1px dotted #288597;
+    color: #288597;
+    text-decoration: none
+}
+
+.moochat_user_shortname {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    float: left;
+    padding-left: 2px
+}
+
+#moochat_hidden {
+    background-image: url(themes/facebook/images/bgrepeat.png);
+    bottom: 0;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    right: 20px;
+    z-index: 100000
+}
+
+#guestsname {
+    display: none;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 5px;
+    margin-bottom: 5px
+}
+
+#moochat_hidden_content {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 7px -24px;
+    border-left: 1px solid #B3BAC7;
+    border-right: 1px solid #B3BAC7;
+    height: 25px;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 16px
+}
+
+.moochat_filetransfer_modal div {
+    display: none;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    z-index: 75;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.moochat_filetransfer_overlay {
+    display: none;
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000000;
+    background-color: rgba(0, 0, 0, 0.0)
+}
+
+.moochat_filetransfer_overlay_show {
+    display: block !important;
+    background-color: rgba(0, 0, 0, 0.7) !important
+}
+
+.moochat_filetransfer_image {
+    position: relative;
+    z-index: 77;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 0;
+    opacity: 1
+}
+
+.moochat_filetransfer_modal div:target video {
+    margin-left: 0;
+    opacity: 1
+}
+
+.close_dialog {
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    right: 15px;
+    top: 15px
+}
+
+.moochat_filetransfer_content {
+    position: relative;
+    z-index: 100000
+}
+
+.moochat_filetransfer_download {
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 55px;
+    z-index: 1000
+}
+
+.moochat_xtc {
+    background: transparent url(themes/facebook/images/xgtc.png) repeat scroll 0 0;
+    height: 10px
+}
+
+.moochat_xcl {
+    background: transparent url(themes/facebook/images/xgcr.png) repeat scroll 0 0;
+    width: 16px
+}
+
+.moochat_xcr {
+    background: transparent url(themes/facebook/images/xgcl.png) repeat scroll 0 0;
+    width: 10px
+}
+
+.moochat_xcc {
+    background: transparent url(themes/facebook/images/xgcc.png) repeat scroll 0 0;
+    font-size: 10px
+}
+
+.moochat_xbc {
+    background: transparent url(themes/facebook/images/xgbc.png) repeat scroll 0 0;
+    height: 8px
+}
+
+.moochat_tc {
+    background: transparent url(themes/facebook/images/gtc.png) repeat-x scroll 0 0;
+    height: 10px
+}
+
+.moochat_cl {
+    background: transparent url(themes/facebook/images/gcl.png) repeat scroll 0 0;
+    width: 10px
+}
+
+.moochat_cr {
+    background: transparent url(themes/facebook/images/gcr.png) repeat scroll 0 0;
+    width: 16px
+}
+
+.moochat_cc {
+    background: transparent url(themes/facebook/images/gcc.png) repeat scroll 0 0;
+    font-size: 10px
+}
+
+.moochat_bc {
+    background: transparent url(themes/facebook/images/gbc.png) repeat-x scroll 0 0;
+    height: 8px
+}
+
+.moochat_iphone .moochat_chatboxmessage {
+    margin-left: 0
+}
+
+.moochat_iphone .moochat_chatboxmessagefrom {
+    display: none
+}
+
+.moochat_iphone {
+    margin-bottom: 4px
+}
+
+.moochat_bl {
+    background: url(themes/facebook/images/iphone.png) no-repeat top left;
+    background-position: 0 -59px;
+    height: 9px;
+    width: 10px
+}
+
+.moochat_br {
+    background: url(themes/facebook/images/iphone.png) no-repeat top left;
+    background-position: 0 -118px;
+    height: 9px;
+    width: 16px
+}
+
+.moochat_tl {
+    background: url(themes/facebook/images/iphone.png) no-repeat top left;
+    background-position: 0 -393px;
+    height: 10px;
+    width: 10px
+}
+
+.moochat_tr {
+    background: url(themes/facebook/images/iphone.png) no-repeat top left;
+    background-position: 0 -453px;
+    height: 10px;
+    width: 16px
+}
+
+.moochat_xbr {
+    background: url(themes/facebook/images/iphone.png) no-repeat top left;
+    background-position: 0 -572px;
+    height: 9px;
+    width: 10px
+}
+
+.moochat_xbl {
+    background: url(themes/facebook/images/iphone.png) no-repeat top left;
+    background-position: 0 -631px;
+    height: 9px;
+    width: 16px
+}
+
+.moochat_xtr {
+    background: url(themes/facebook/images/iphone.png) no-repeat top left;
+    background-position: 0 -906px;
+    height: 10px;
+    width: 10px
+}
+
+.moochat_xtl {
+    background: url(themes/facebook/images/iphone.png) no-repeat top left;
+    background-position: 0 -966px;
+    height: 10px;
+    width: 16px
+}
+
+#moochat_hide {
+    background: url(themes/facebook/images/hide.png) no-repeat top left;
+    background-position: 8px;
+    border-right: 1px solid #B3BAC7;
+    cursor: pointer;
+    float: right;
+    height: 18px;
+    margin-left: 1px;
+    margin-top: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 6px;
+    width: 16px
+}
+
+#moochat_flashcontent {
+    position: absolute;
+    top: -1000px
+}
+
+#moochat_userstab_text {
+    float: left
+}
+
+.untranslatedtext {
+    color: #3E454C;
+}
+
+.moochat_trayicontext {
+    float: left;
+    color: #333333;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    width: auto;
+    padding-top: 1px;
+    padding-left: 5px;
+    text-shadow: 1px 1px 0 #FFFFFF
+}
+
+.moochat_trayiconimage {
+    cursor: pointer;
+    margin-right: 2px;
+    margin-top: 1px
+}
+
+.moochat_trayiconimage:hover {
+    -moz-opacity: 0.6;
+    opacity: 0.6
+}
+
+#moochat_userstab_popup .moochat_tabsubtitle {
+    padding-bottom: 5px;
+    padding-left: 4px;
+    overflow: hidden;
+    min-height: 19px
+}
+
+.moochat_subsubtitle {
+    color: #111111;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.3em;
+    padding: 5px 0;
+    cursor: default;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.moochat_subsubtitle_top {
+    margin-top: 0;
+    padding-top: 0
+}
+
+.moochat_subsubtitle .hrleft {
+    display: inline-block;
+    width: 5px;
+    border: 0;
+    background-color: #D1D2D4;
+    height: 1px;
+    margin-right: 5px;
+    margin-bottom: 3px
+}
+
+.moochat_subsubtitle .hrright {
+    display: inline-block;
+    width: 200px;
+    border: 0;
+    background-color: #D1D2D4;
+    height: 1px;
+    margin-left: 5px;
+    margin-bottom: 3px
+}
+
+.moochat_nofriends {
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.3em;
+    padding: 0 10px;
+    color: #111111
+}
+
+.moochat_ad {
+    background: #EDEFF4
+}
+
+.moochat_lastseenmessage {
+    overflow: hidden;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit
+}
+
+.moochat_lastseen {
+    overflow: hidden;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit
+}
+
+.moochat_message {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #666;
+    font-family: inherit;
+    font-size: inherit;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px;
+    text-align: left
+}
+
+.moochat_container {
+    z-index: 100001;
+    position: fixed;
+    top: 200px
+}
+
+.moochat_container_title {
+    cursor: default;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    padding-right: 0;
+    background: #4E6AAB;
+    background: -moz-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4E6AAB), color-stop(44%, #4966A7), color-stop(100%, #4B67A8));
+    background: -webkit-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    background: -o-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    background: -ms-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    background: linear-gradient(to bottom, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4E6AAB', endColorstr='#4B67A8', GradientType=0);
+    border: 1px solid #2E4588;
+    padding: 6px 8px;
+    color: #FFF;
+    webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+
+.moochat_container_title span {
+    float: left
+}
+
+.moochat_container_body {
+    border-left: 1px solid #A2A3A5;
+    border-bottom: 1px solid #A2A3A5;
+    border-right: 1px solid #A2A3A5;
+    background-color: #EDEFF4;
+    position: relative;
+    overflow: hidden
+}
+
+.moochat_iframe {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.moochat_loading {
+    position: absolute;
+    background: url(themes/facebook/images/loader.gif);
+    right: 10px;
+    top: 10px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px
+}
+
+.moochat_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none
+}
+
+.moochat_options_disable {
+    border-top: 1px solid #D1D2D4;
+    border-bottom: 1px solid #D1D2D4;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit
+}
+
+#moochat_userstab_popup_available, #moochat_userstab_popup_busy, #moochat_userstab_popup_invisible, #moochat_userstab_popup_offline {
+    cursor: pointer
+}
+
+.moochat_tabsubtitle2 {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    background-image: url(extensions/jabber/jabber_dark.png);
+    background-repeat: no-repeat;
+    background-position: 12px 5px;
+    border-bottom: 1px solid #D1D2D4;
+    border-left: 1px solid #A2A3A5;
+    border-right: 1px solid #A2A3A5;
+    color: #666666;
+    font-size: 12px;
+    font-family: Tahoma, Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+    padding: 10px 4px 10px 46px;
+    line-height: 1.3em !important;
+    font-weight: bold;
+    text-decoration: none;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8
+}
+
+.moochat_unblock {
+    float: right;
+    cursor: pointer;
+    background: url('themes/facebook/images/unblock.png') no-repeat scroll 0 0 transparent;
+    height: 16px;
+    width: 16px;
+    margin-top: -1.5px;
+    line-height: 15px
+}
+
+.moochat_userlist .moochat_userscontentname {
+    text-overflow: ellipsis;
+    max-width: 108px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.moochat_tab .moochat_user_shortname {
+    text-overflow: ellipsis;
+    /*max-width: 70px;*/
+    white-space: nowrap;
+    overflow: hidden !important;
+    line-height: 1.5
+}
+
+.moochat_tabtitle .moochat_name a {
+    text-overflow: ellipsis;
+    max-width: 159px;
+    white-space: nowrap;
+    overflow: hidden !important;
+}
+
+.moochat_tabtitle .moochat_name {
+    text-overflow: ellipsis;
+    max-width: 130px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    margin-top:3px;
+}
+
+.invite_name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100px;
+    float: left
+}
+
+#statusupdate_div, #guestnameupdate_div {
+    font-size: 11px;
+    padding: 2px
+}
+
+.moochat_statusbutton > img, .moochat_guestnamebutton > img {
+    margin: 1px 35%;
+    opacity: 0.5
+}
+
+.moochat_extra_width {
+    width: 214px !important
+}
+
+.moochat_tabopen_bottom {
+    bottom: 0 !important
+}
+
+#moochat_chatboxes_wide .moochat_new_message {
+    background: #4E6AAB !important;
+    background: -moz-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4E6AAB), color-stop(44%, #4966A7), color-stop(100%, #4B67A8)) !important;
+    background: -webkit-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%) !important;
+    background: -o-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%) !important;
+    background: -ms-linear-gradient(top, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%) !important;
+    background: linear-gradient(to bottom, #4E6AAB 0%, #4966A7 44%, #4B67A8 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4E6AAB', endColorstr='#4B67A8', GradientType=0) !important;
+    border: 1px solid #2E4588 !important;
+    color: #FFFFFF !important;
+    
+}
+
+#moochat_chatboxes_wide .moochat_new_message:hover {
+    color: #FFF !important
+}
+
+.moochat_new_message .moochat_closebox_bottom {
+    color: #FFF !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7
+}
+
+.moochat_new_message .moochat_closebox_bottom:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+.moochat_plugins_dropdownlist {
+    clear: both !important;
+    height: 20px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden !important;
+    color: #111;
+    font-size: 12px;
+    font-weight: normal;
+    border: solid #FFF;
+    border-width: 1px 0;
+    padding-right: 5px
+}
+
+.moochat_avchat {
+    width: 16px;
+    height: 16px;
+    float: right;
+    background-position: -3px 1px
+}
+
+.moochat_block {
+    background-position: 0 -66px
+}
+
+.moochat_broadcast {
+    background-position: 1px -132px
+}
+
+.moochat_chathistory {
+    background-position: 0 -198px
+}
+
+.moochat_chattime {
+    background-position: 0 -264px
+}
+
+.moochat_clearconversation {
+    background-position: 2px -330px;
+}
+
+.moochat_style {
+    background-position: 0 -396px;
+}
+
+.moochat_filetransfer {
+    background-position: 0 -462px;
+}
+.moochat_buttoncamera {
+    background-position: -39px -281px;
+}
+.moochat_icon_more_2_addfriend {
+    float:right;
+    margin-left:6px;
+}
+.moochat_icon_more_2_closewindow {
+    background-position: -4px -123px;
+    float:right;
+    width: 21px;
+}
+.moochat_icon_more_file {
+    background-position: -136px -422px;
+}
+.moochat_buttonemoticon {
+    background-position: 0 -345px;
+}
+.moochat_buttonfiles {
+    background-position: -33px -312px;
+}
+.moochat_buttonicon ._3jk {
+    float: left;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    zoom: 1;
+}
+.moochat_buttonicon ._n {
+    bottom: 0;
+    cursor: inherit;
+    font-size: 1000px !important;
+    height: 300px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+.moochat_games {
+    background-position: 0 -528px;
+}
+
+.moochat_handwrite {
+    background-position: 0 -594px
+}
+
+.moochat_report {
+    background-position: 0 -660px
+}
+
+.moochat_save {
+    background-position: 0 -726px
+}
+
+.moochat_screenshare {
+    background-position: 0 -792px
+}
+
+.moochat_smilies {
+    background-position: 0 -858px;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    margin-top: 1px
+}
+
+.moochat_transliterate {
+    background-position: 0 -924px
+}
+
+.moochat_whiteboard {
+    background-position: 0 -990px
+}
+
+.moochat_writeboard {
+    background-position: 0 -1056px
+}
+
+.moochat_stickers {
+    background-position: -1px -1190px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_block {
+    background-position: 0 -101px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_broadcast {
+    background-position: 1px -167px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_chathistory {
+    background-position: 0 -233px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_clearconversation {
+    background-position: 2px -365px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_style {
+    background-position: 0 -396px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_filetransfer {
+    background-position: 0 -498px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_games {
+    background-position: 0 -563px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_handwrite {
+    background-position: 0 -629px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_report {
+    background-position: 0 -691px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_save {
+    background-position: 0 -761px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_screenshare {
+    background-position: 0 -826px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_transliterate {
+    background-position: 0 -959px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_whiteboard {
+    background-position: 0 -990px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_writeboard {
+    background-position: 0 -1091px
+}
+
+.moochat_plugins_dropdownlist:hover .moochat_stickers {
+    background-position: -1px -1220px
+}
+
+.moochat_new_message_unread {
+    background: none repeat scroll 0 0 #FFFFFF;
+    bottom: 0;
+    margin-left: -5px;
+    position: absolute;
+    width: 218px;
+    z-index: 1000;
+    display: none;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-top: 1px dotted #288597
+}
+
+.moochat_new_message_unread a:hover {
+    text-decoration: underline
+}
+
+#moochat .ui-icon, #moochat .ui-widget-content .ui-icon {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 1px -1141px
+}
+
+#moochat .ui-icon-gripsmall-diagonal-se {
+    background-position: 0 -74px
+}
+
+#moochat .ui-icon {
+    width: 16px;
+    height: 16px
+}
+
+#moochat .ui-resizable-se {
+    cursor: se-resize;
+    right: 1px;
+    bottom: 1px
+}
+
+#moochat .ui-resizable-handle {
+    background: url(themes/facebook/images/moochat.png) no-repeat top left;
+    background-position: 1px -1141px;
+    position: absolute;
+    font-size: 0.1px;
+    display: block
+}
+
+#moochat .ui-icon {
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat
+}
+
+#moochat .file_image {
+    max-width: 110px;
+    max-height: 170px;
+    width: auto !important;
+    vertical-align: inherit;
+    border-radius: 8px;
+}
+
+#moochat .file_video {
+    width: 65px;
+    height: 60px;
+    display: block
+}
+
+#moochat .file_audio {
+    width: 65px;
+    height: 60px;
+    border: 1px dotted transparent;
+    display: block
+}
+
+#moochat .imagemessage {
+    margin-bottom: 3px;
+    margin-top: 3px;
+    text-decoration: none
+}
+
+#moochat_sidebar {
+    height: 435px;
+    position: fixed !important;
+    bottom: 0;
+    right: 20px;
+    width: 205px;
+    z-index: 300;
+    display: none
+}
+
+#moochat_bottomBar {
+    border: 1px solid #A2A3A5;
+    border-width: 0 1px;
+    position: absolute;
+    bottom: 0;
+    width: 203px;
+    height: 28px;
+    /*overflow: hidden*/
+    z-index: 200000;
+}
+
+#moochat_searchbar {
+    border-top: 1px solid #D1D2D4
+}
+
+#moochat_searchbar_icon {
+    width: 6px;
+    height: 6px;
+    border: 3px solid #B2B3B5;
+    background: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    pointer-events: none;
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    display: none;
+}
+
+#moochat_searchbar_icon .after {
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    height: 7px;
+    width: 3px;
+    background: #B2B3B5;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.moochat_search:focus {
+    color: #000 !important
+}
+
+#moochat_optionsbutton_icon:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+#moochat_userstab:hover {
+    background: #fafbfb !important
+}
+
+.moochat_floatL {
+    float: left !important
+}
+
+.moochat_floatR {
+    float: right !important
+}
+
+.ccmsg_avatar {
+    height: 32px;
+    width: 32px
+}
+
+.moochat_clearFloat {
+    clear: both !important
+}
+
+#moochat_chatboxes_wide .moochat_available {
+    background: #65A830 !important
+}
+
+#moochat_userstab_popup .moochat_tabcontent {
+    font-size: 12px !important;
+    border: 1px solid #A2A3A5;
+    border-width: 0 1px
+}
+
+#moochat_userslist {
+    padding-bottom: 3px;
+    padding-top: 3px
+}
+
+#moochat_userslist .moochat_userscontentdot {
+    margin-top: 12px
+}
+
+.moochat_deviceType {
+    color: #63A924;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 32px;
+    height: 32px
+}
+
+@-moz-document url-prefix() {
+    .moochat_deviceType {
+        line-height: 27px
+    }
+}
+
+.moochat_popup_plugins {
+    overflow: hidden;
+    position: absolute;
+    top: 36px;
+    right: 7px;
+    z-index: 101;
+    border: 1px solid #e3e3e3;
+    border-top: none;
+    display: none;
+    background: #FFF;
+    padding: 0;
+    max-height: 179px;
+    max-width: 210px;
+    min-width: 150px
+}
+
+.moochat_plugins_dropdown {
+    width: 16px;
+    height: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 2px
+}
+
+.moochat_plugins_dropdown_icon {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
+
+.moochat_plugins_dropdown_active, .moochat_plugins_dropdown:hover .moochat_plugins_dropdown_icon {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+.moochat_unreadCount {
+    background-color: #DC0D17;
+    background-image: -webkit-gradient(linear,center top,center bottom, from(#FA3C45), to(#DC0D17));
+    background-image: -o-linear-gradient(top, #FA3C45 0%, #DC0D17 100%);
+    background-image: -moz-linear-gradient(top, #FA3C45 0%, #DC0D17 100%);
+    background-image: -webkit-linear-gradient(top, #FA3C45 0%, #DC0D17 100%);
+    background-image: -ms-linear-gradient(top, #FA3C45 0%, #DC0D17 100%);
+    background-image: linear-gradient(to top, #FA3C45 0%, #DC0D17 100%);
+    color: #FFF;
+    min-height: 13px;
+    margin: 0 4px;
+    padding: 1px 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-border-radius: 2px 2px 3px 3px;
+    -moz-border-radius: 2px 2px 3px 3px;
+    border-radius: 2px 2px 3px 3px;
+    display: none;
+    height: 16px;
+    line-height: 15px;
+}
+
+#moochat_unseenUsers {
+    position: absolute;
+    left: -85px;
+    bottom: 40px;
+    padding: 3px 0 4px;
+    background-color: #efefef;
+    border: solid 1px #cbcbcb;
+    z-index: 1000;
+    display: none
+}
+
+#moochat_chatbox_left_border_fix {
+    width: 1px;
+    height: 1px;
+    top: -1px;
+    position: absolute;
+    right: -1px;
+    background: #B3BAC7;
+    display: none
+}
+
+.moochat_unseenUserList {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+    padding-right: 10px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.54);
+    display: block;
+    font-weight: normal;
+    line-height: 2;
+    width: 120px;
+    clear: both;
+    overflow: hidden !important;
+    cursor: pointer
+}
+
+.moochat_unseenUserList:hover, .moochat_plugins_dropdownlist:hover {
+    background-color: #4E6AAB;
+    border-color: #2E4588;
+    color: #FFF;
+    outline: none
+}
+.moochat_unseenUserList:hover i{
+    color:#fff;
+}
+.moochat_plugins_dropdownlist:hover i.material-icons{
+    color:#fff;
+}
+.moochat_userName {
+    text-overflow: ellipsis;
+    max-width: 85px;
+    white-space: nowrap;
+    overflow: hidden !important
+}
+
+.moochat_unseenClose {
+    font-size: 15px;
+    color: #9CB3D8;
+    font-weight: bold;
+    height: 11px;
+    width: 11px;
+    margin-top: 2px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 12px
+}
+.moochat_unseenClose i {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.54);
+    margin-top: 5px;
+}
+.moochat_unseenClose:hover {
+    color: #FFF;
+    background: #40659F
+}
+
+#moochat_unseenUsers .moochat_unreadCount {
+    padding: 0 4px;
+    display: block !important;
+    visibility: hidden;
+    background: #D0021B;
+    border-radius: 4px;
+    color: #3B5998;
+    font-size: 11px;
+    font-weight: bold;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 4px;
+}
+
+#moochat_chatbox_left.moochat_unseenList_open {
+    background: #FFF !important;
+}
+
+#moochat_unseenUserCount {
+    position: absolute;
+    right: 2px;
+    top: -8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    -webkit-border-radius: 2px 2px 3px 3px;
+    -moz-border-radius: 2px 2px 3px 3px;
+    border-radius: 2px 2px 3px 3px;
+    background-color: #DC0D17;
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#FA3C45), to(#DC0D17));
+    background-image: -webkit-linear-gradient(top, #FA3C45 0%, #DC0D17 100%);
+    color: #FFF;
+    height: 13px;
+    line-height: 13px;
+    padding: 1px 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    display: none
+}
+
+.moochat_unseenUsers_unread {
+    visibility: visible !important
+}
+
+.moochat_unseenList_open #moochat_unseenUserCount {
+    display: none !important
+}
+
+.moochat_isMobile {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 2px 1px 4px;
+    height: 8px !important;
+    width: 6px !important;
+    position: relative;
+    margin-top: 1px;
+    margin-right: 4px
+}
+
+.moochat_isMobile_available {
+    border-color: #0F9D28
+}
+
+.moochat_isMobile_away {
+    border-color: #FF921C
+}
+
+.moochat_isMobile_busy {
+    border-color: #FF1B29
+}
+
+.moochat_isMobile_offline {
+    border-color: #8D8D8D
+}
+
+#moochat_chatboxes_wide .moochat_isMobile {
+    margin-top: 2px !important
+}
+
+.moochat_mobileDot {
+    border: 1px solid #4966A7;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    height: 0;
+    left: 2px;
+    position: absolute;
+    top: 9px
+}
+
+.moochat_mobile_available {
+    color: #0F9D28
+}
+
+.moochat_mobile_away {
+    color: #FF921C
+}
+
+.moochat_mobile_busy {
+    color: #FF1B29
+}
+
+.moochat_mobile_offline {
+    color: #8D8D8D
+}
+
+.moochat_mobile_blocked {
+    color: #8D8D8D;
+    margin-right: 4px
+}
+
+.moochat_isMobile + .moochat_userscontentdot {
+    display: none !important
+}
+
+#moochat_chatboxes_wide .moochat_mobileDot {
+    border-color: #FFF
+}
+
+#moochat_nousers_found {
+    text-overflow: ellipsis;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-align: center;
+    padding: 5px
+}
+
+.moochat_noUser_optionBar {
+    border-left: 1px solid #D1D2D4 !important;
+    width: 25px !important
+}
+
+#moochat_userstab_popup .slimScrollRail {
+    display: none !important
+}
+
+#moochat .moochat_plugins {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 100% !important;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+}
+
+.moochat_fullOpacity {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+    filter: alpha(opacity=100) !important;
+    -moz-opacity: 1 !important;
+    opacity: 1 !important
+}
+
+.moochat_option_active_serach {
+    width: 175px !important
+}
+
+.moochat_plugins_dropdownlist .moochat_pluginsicon {
+    margin-left: 5px;
+    margin-top: 1px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+    filter: alpha(opacity=100) !important;
+    -moz-opacity: 1 !important;
+    opacity: 1 !important
+}
+
+#loggedout {
+    margin-right: 7px;
+    background-color: #F6F6F8;
+    border: 1px solid #AAB1C0 !important;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: 0 !important;
+    -webkit-box-shadow: 0 1px 1px #A2A3A5;
+    -moz-box-shadow: 0 1px 1px #A2A3A5;
+    box-shadow: 0 1px 1px #A2A3A5;
+    color: #333;
+    font-weight: bold;
+    height: 17px;
+    width: 24px;
+    outline: none;
+    padding: 5px;
+    position: fixed;
+    right: 20px;
+    display: none
+}
+
+.moochat_prependMessages {
+    background-color: #F6F7F8 !important;
+    border-bottom: 1px solid #ccc !important;
+    color: #333;
+    cursor: pointer;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    font-size: 9px;
+    text-align: center
+}
+
+.moochat_prependMessages:hover {
+    cursor: pointer
+}
+
+.placeholder {
+    color: #aaaaaa !important
+}
+
+#moochat img {
+    border: none;
+    padding: 0;
+    background: transparent
+}
+
+.moochat_stickerImage {
+    display: block
+}
+
+.moochat_ccmobiletab_redirect {
+    background-color: #F6F6F8;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F6F6F8', endColorstr='#EEEFF0');
+    background: -webkit-gradient(linear, left top, left bottom, from(#F6F6F8), to(#EEEFF0));
+    background: -moz-linear-gradient(top, #F6F6F8, #EEEFF0);
+    background: -ms-linear-gradient(top, #F6F6F8, #EEEFF0);
+    background: -o-linear-gradient(top, #F6F6F8, #EEEFF0);
+    border-top: 1px solid #B3BAC7;
+    border-left: 1px solid #B3BAC7;
+    border-right: 1px solid #B3BAC7;
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+    padding: 15px;
+    text-align: center;
+    color: #333333;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    z-index: 99999
+}
+
+.moochat_ccmobiletab_tabalert {
+    background: none repeat scroll 0 0 #EE397A;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    color: white;
+    position: absolute;
+    right: 30%;
+    text-shadow: 0 0 35px white;
+    text-align: center;
+    text-shadow: none !important;
+    bottom: 90%;
+    padding: 0 10px;
+    line-height: normal;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #D11559;
+}
+
+.moochat_ccmobiletab_tabalert:before {
+    border-color: #D11559 transparent transparent;
+    border-style: solid;
+    border-width: 10px;
+    bottom: -22px;
+    content: "";
+    position: absolute;
+    right: 24%;
+}
+
+.cc_overlay {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    z-index: 10000
+}
+
+#mobile_social_login {
+    position: absolute;
+    width: 100%
+}
+
+#mobile_social_login img.auth_options {
+    position: static;
+    margin: 4% auto
+}
+
+#mobile_social_login .login_container {
+    position: relative;
+    z-index: 10000;
+    margin: 0 auto;
+    background: #FFF;
+    padding: 5%;
+    border-radius: 3%;
+    box-shadow: 10px 10px 5px #888;
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888
+}
+
+#mobile_social_login img.auth_options:first-child {
+    margin-top: 0
+}
+
+#mobile_social_login img.auth_options:last-child {
+    margin-bottom: 0
+}
+
+._54_- {
+    padding: 3px 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: #e9eaed;
+}
+._54_- table{
+    table-layout: fixed;
+    width: 100%;
+}
+._54_- table tr td + td{
+    width: 50px;
+}
+._51mz {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #e9eaed;
+    color: #141823;
+}
+
+._51mz ._51m-:first-child {
+    padding-left: 0;
+}
+._51mx:last-child>._51m- {
+    padding-bottom: 0;
+}
+._51mx:first-child>._51m- {
+    padding-top: 0;
+}
+._54_- .uiInlineTokenizer {
+    max-width: 200px;
+    /*overflow: hidden; */
+}
+._54__ {
+    padding-right: 3px;
+    width: 100%;
+}
+.uiInlineTokenizer {
+    cursor: text;
+    border: 1px solid #bdc7d8;
+}
+.uiTokenizer {
+    background: #fff;
+}
+.clearfix {
+    zoom: 1;
+}
+.tt-menu div.empty-message{
+    font-size: 13px;
+    padding: 5px;
+}
+
+.uiInlineTokenizer .uiTypeahead {
+    border: 0;
+    float: left;
+    max-width: 100%;
+}
+.uiTypeahead {
+    background: #fff;
+    border: solid #bdc7d8;
+    border-width: 1px 0;
+    cursor: default;
+    position: relative;
+}
+.uiInlineTokenizer .uiTypeahead .wrap {
+    border: 0;
+}
+.uiTypeahead .wrap {
+    border: solid #bdc7d8;
+    border-width: 0 1px;
+}
+.uiTypeahead .innerWrap {
+    /*overflow: hidden;*/
+    zoom: 1;
+}
+.uiTypeahead .textInput {
+    background-color: transparent;
+    border: 0;
+    box-sizing: border-box;
+    outline: 0;
+    width: 100%;
+}
+
+._51mx:first-child>._51m- {
+    padding-top: 0;
+}
+.uiButtonConfirm {
+    background-color: #3e77ba;
+    border: solid 1px #2a5688;
+}
+.uiButton, .uiButtonSuppressed:active, .uiButtonSuppressed:focus, .uiButtonSuppressed:hover {
+    background-color: #3e77ba;
+    border: solid 1px #2a5688;
+}
+.uiButton {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 13px;
+    padding:  6px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.uiButtonText, .uiButton input {
+    background: none;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 13px;
+    margin: 0;
+    padding: 1px 0 2px;
+    white-space: nowrap;
+}
+.inputtext, .inputpassword {
+    padding-bottom: 4px;
+    border: 1px solid #bdc7d8;
+    margin: 0;
+    padding: 3px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+}
+._51mz ._51mw {
+    padding-right: 0;
+}
+.uiGrid .vTop {
+    vertical-align: top;
+}
+
+.uiTypeahead .bootstrap-tagsinput {
+    background-color: #fff;
+    border: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    display: inline-block;
+    padding: 0;
+    color: #555;
+    vertical-align: middle;
+    border-radius: 4px;
+    max-width: 100%;
+    line-height: 22px;
+    cursor: text;
+}
+
+.uiTypeahead .bootstrap-tagsinput input {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 6px;
+    margin: 0;
+    width: auto;
+    max-width: inherit;
+}
+.innerWrap .bootstrap-tagsinput > span.twitter-typeahead{
+    display: block;
+    float: left;
+    position: static!important;
+    margin: 3px 0;
+}
+.uiTypeahead .bootstrap-tagsinput.form-control input::-moz-placeholder {
+    color: #777;
+    opacity: 1;
+}
+
+.uiTypeahead .bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+    color: #777;
+}
+
+.uiTypeahead .bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+    color: #777;
+}
+
+.uiTypeahead .bootstrap-tagsinput input:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.uiTypeahead .bootstrap-tagsinput .tag {
+    margin-right: 2px;
+    color: white;
+    float: left;
+    margin-top: 3px;
+    margin-bottom:3px;
+    margin-left: 2px;
+    font-size: 11px;
+    color: #4a4a4a;
+    background-color: #e9e9e9;
+    border: solid 1px #d0d0d0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.uiTypeahead .bootstrap-tagsinput .tag [data-role="remove"] {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.uiTypeahead .bootstrap-tagsinput .tag [data-role="remove"]:after {
+    content: "x";
+    padding: 0px 2px;
+}
+
+.uiTypeahead .bootstrap-tagsinput .tag [data-role="remove"]:hover {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.uiTypeahead .bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.uiTypeahead .bootstrap-tagsinput {
+    width: 100%;
+}
+#moochat .uiTypeahead .bootstrap-tagsinput{
+    box-sizing: border-box!important;
+}
+.uiTypeahead .accordion {
+    margin-bottom: -3px;
+}
+
+.uiTypeahead .accordion-group {
+    border: none;
+}
+
+.twitter-typeahead .tt-query,
+.twitter-typeahead .tt-hint {
+    margin-bottom: 0;
+}
+
+.twitter-typeahead .tt-hint {
+    display: none;
+}
+
+.tt-dropdown-menu, .tt-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 0;
+    margin:  0 0;
+    list-style: none;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #bfbfbf;
+    box-shadow: none;
+    border-radius: 0;
+    text-align: left;
+    background-clip: padding-box;
+}
+.tt-suggestion{
+    margin: 0;
+    position: relative;
+    zoom: 1;
+    min-height: 32px;
+    padding: 5px 10px 5px 45px;
+}
+.tt-menu div.empty-message{
+    font-size: 13px;
+    padding: 5px;
+}
+
+.tt-suggestion > p {
+    display: block;
+    padding: 2px 10px 2px 45px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: nowrap;
+    min-height: 32px;
+
+}
+
+.tt-suggestion > p:hover,
+.tt-suggestion > p:focus,
+.tt-suggestion.tt-cursor p {
+    color: #ffffff;
+    text-decoration: none;
+    outline: 0;
+    background-color: #428bca;
+}
+
+.tt-suggestion img {
+    display: block;
+    height: 32px;
+    left: 6px;
+    position: absolute;
+    width: 32px;
+    border: 1px solid #d4d4d4!important;
+}
+.tt-suggestion:hover{
+    background-color: #4E6AAB;
+    border-color: #2E4588;
+    color: #FFF;
+}
+.tt-suggestion .text{
+    font-weight: bold;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+}
+.tt-menu {
+    cursor: pointer;
+}
+.tt-dataset {
+    width: 200px;
+    position: static;
+    display: block;
+    left: 0;
+    top: 100%;
+}
+.tt-cursor {
+    background-color: #6d84b4;
+    border-color: #3a5795;
+}
+.user-tagging-container > i {
+    cursor: pointer;
+}
+.__react_component_tooltip{
+    z-index: 100005 !important;
+}
+.moochat_iconlist{
+    position: absolute;
+    background: #fff;
+    bottom: 30px;
+    text-align: left;
+    right: 1px;
+    left: 1px;
+    padding: 5px;
+    border: 1px solid #e3e3e3;
+}
+.moochat_iconlist span:hover{
+    background-color: #f1f1f1 ;
+}
+.moochat_iconlist .iconos{
+    padding:1px;
+}
+.moochat_tabtitle i.material-icons{
+    font-size: 17px;
+}
+
+/*large emoji*/
+.only_emoji .iconos{
+    width: 32px;
+    height: 32px;
+    background-size:640px 200px;
+}
+.only_emoji #a48{
+    background-position: -525px -84px;
+}
+.only_emoji #a20{
+    background-position: -84px -44px;
+}
+.only_emoji #a1{
+    background-position: -4px -5px;
+}
+.only_emoji #a41{
+    background-position: -244px -84px;
+}
+.only_emoji #a50{
+    background-position: -605px -84px;
+}
+.only_emoji #a24{
+    background-position: -244px -44px;
+}
+.only_emoji #a29{
+    background-position: -444px -44px;
+}
+.only_emoji #a52{
+    background-position: -4px -124px;
+}
+.only_emoji #a8{
+    background-position: -284px -4px;
+}
+.only_emoji #a39{
+    background-position: -165px -84px;
+}
+.only_emoji #a6{
+    background-position: -204px -4px;
+}
+.only_emoji #a4{
+    background-position: -164px -4px;
+}
+.only_emoji #a47{
+    background-position: -485px -85px;
+}
+.only_emoji #a42{
+    background-position: -284px -85px;
+}
+.only_emoji #a7{
+    background-position: -245px -4px;
+}
+.only_emoji #a3{
+    background-position: -84px -4px;
+}
+.only_emoji #a43{
+    background-position: -84px -124px;
+}
+.only_emoji #a37{background-position: -84px -84px;}
+.only_emoji #a35{background-position: -4px -84px;}
+.only_emoji #a15{background-position: -564px -4px;}
+.only_emoji #a33{background-position: -564px -44px;}
+.only_emoji #a72{background-position: -164px -124px;}
+.only_emoji #a19{background-position: -44px -44px;}
+.only_emoji #a53{    background-position: -44px -124px;}
+.only_emoji #a23{    background-position: -204px -44px;}
+.only_emoji #a18{background-position: -4px -44px;}
+.only_emoji #a57{background-position: -204px -124px;}
+.only_emoji #a77{    background-position: -404px -163px;}
+.only_emoji #a76{    background-position: -445px -124px;}
+.only_emoji #a2{    background-position: -124px -164px;}
+.only_emoji #a5{    background-position: -404px -124px;}
+.only_emoji #a9{    background-position: -565px -124px;}
+.only_emoji #a10{    background-position: -525px -124px;}
+.only_emoji #a11{    background-position: -607px -124px;}
+.only_emoji #a12{    background-position: -484px -124px;}
+.only_emoji #a13{    background-position: -365px -124px;}
+.only_emoji #a14{background-position: -285px -124px;}
+.only_emoji #a16{    background-position: -605px -164px;}
+.only_emoji #a17{    background-position: -284px -164px;}
+.only_emoji #a21{    background-position: -524px -164px;}
+.only_emoji #a22{    background-position: -445px -164px;}
+.only_emoji #a25{background-position: -164px -164px;}
+.only_emoji #a26{    background-position: -604px -4px;}
+.only_emoji #a27{    background-position: -444px -4px;}
+.only_emoji #a28{background-position: -204px -84px;}
+.only_emoji #a30{    background-position: -124px -84px;}
+.only_emoji #a31{    background-position: -484px -44px;}
+.only_emoji #a32{    background-position: -244px -164px;}
+.only_emoji #a34{    background-position: -204px -164px;}
+.only_emoji #a36{    background-position: -45px -4px;}
+.only_emoji #a38{    background-position: -125px -4px;}
+.only_emoji #a40{    background-position: -325px -4px;}
+.only_emoji #a44{    background-position: -404px -4px;}
+.only_emoji #a45{background-position: -524px -4px;}
+.only_emoji #a46{background-position: -244px -124px;}
+.only_emoji #a49{background-position: -564px -84px;}
+.only_emoji #a51{    background-position: -44px -164px;}
+.only_emoji #a54{    background-position: -86px -164px;}
+.only_emoji #a55{    background-position: -489px -164px;}
+.only_emoji #a56{background-position: -363px -84px;}
+.mooGroup {
+    margin-top: 20px;
+}
+.mooGroup_title {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.26);
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+.mooGroup span.moochat_userscontentavatar{
+    background: #fff;
+    overflow: hidden!important;
+    position: relative;
+}
+.mooGroup span.moochat_userscontentavatar img {
+    width: 16px;
+    height: 16px;
+}
+.mooGroup span.moochat_userscontentavatar.two_member img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -50%;
+}
+.mooGroup span.moochat_userscontentavatar.two_member img + img{
+    left:auto;
+    right:-50%;
+}
+span.moochat_userscontentavatar.three_member > img:first-child {
+    width: 100%;
+    height: 100%;
+    margin-left: -50%;
+    float: left;
+}
+.ReactModal__Overlay {
+    -webkit-perspective: 600;
+    perspective: 600;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+    transition: opacity 150ms ease-out;
+    z-index: 100001;
+    background: rgba(0, 0, 0, 0.5)!important;
+}
+
+.ReactModal__Content {
+    -webkit-transform: scale(0.5) rotateX(-30deg);
+    transform: scale(0.5) rotateX(-30deg);
+}
+
+.ReactModal__Content--after-open {
+    -webkit-transform: scale(1) rotateX(0deg);
+    transform: scale(1) rotateX(0deg);
+    transition: all 150ms ease-in;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.ReactModal__Content--before-close {
+    -webkit-transform: scale(0.5) rotateX(30deg);
+    transform: scale(0.5) rotateX(30deg);
+    transition: all 150ms ease-in;
+}
+
+.ReactModal__Content.modal-dialog {
+    border: none;
+    background-color: transparent;
+}
+.ReactModalPortal .modal-header{
+    padding:0;
+}
+.ReactModalPortal .modal-header h4{
+    font-size: 16px;
+    font-weight: bold;
+    background: #F4F4F4;
+    padding: 15px;
+    border-radius: 4px 4px 0 0;
+}
+
+.ReactModal__Content ul {
+    list-style:none;
+    padding:0;
+}
+.clear{
+    clear: both;
+}
+.ReactModal__Content textarea{
+    width:100%;
+}
+.btn-default{
+    background-color: #e5e5e5;
+}
+.btn-default:hover,.btn-default:active{
+    background-color: #eeeeee;
+}
+.ReactModalPortal .ReactModal__Content.modal-dialog{
+    margin:90px auto;
+}
+@keyframes mercuryTypingAnimation {
+    0% {
+        transform: translateY(0px)
+    }
+    28% {
+        transform: translateY(-5px)
+    }
+    44% {
+        transform: translateY(0px)
+    }
+}
+@-webkit-keyframes mercuryTypingAnimation {
+    0% {
+        transform: translateY(0px)
+    }
+    28% {
+        transform: translateY(-5px)
+    }
+    44% {
+        transform: translateY(0px)
+    }
+}
+@-moz-keyframes mercuryTypingAnimation {
+    0% {
+        transform: translateY(0px)
+    }
+    28% {
+        transform: translateY(-5px)
+    }
+    44% {
+        transform: translateY(0px)
+    }
+}
+.chatTyping_text{
+    animation: mercuryTypingAnimation 1.5s infinite ease-in-out;
+    -webkit-animation: mercuryTypingAnimation 1.5s infinite ease-in-out;
+    -moz-animation: mercuryTypingAnimation 1.5s infinite ease-in-out;
+    border-radius: 2px;
+    display: inline-block;
+    height: 4px;
+    margin-right: 2px;
+    width: 4px
+}
+
+/*chats list*/
+.chat-content-list{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.chat-content-list li:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.chat-content-list .chat-thumb{
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+.chat-content-list .chat-info{
+    margin-left: 80px;
+    margin-right: 30px;
+}
+.chat-content-list .chat-info .title{
+    font-size: 10px;
+    display: block;
+    font-weight: bold;
+    overflow: hidden;
+}
+ul.chat-content-list > li{
+    padding-bottom:15px;
+    position:relative;
+    border-top:1px solid #dfdfdf;
+    padding-top:15px;
+}
+ul#list-content ul.chat-content-list:first-child li:first-child {
+    border: none;
+}
+ul.chat-content-list > li .list_option{
+    top:15px;
+}
+/*end chat list*/
+/*chat detail*/
+.chat-detail{
+    margin-bottom:15px;
+}
+.chat-info{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.info {
+    margin-bottom: 10px;
+}
+.info li:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+.info label {
+    width: 90px;
+    font-weight:normal;
+    color:#000;
+    float:left;
+}
+.info li > div {
+    padding-left: 145px;
+}
+.info li .video-description{
+    clear:none;
+}
+.info2 label {
+    width: 145px;
+}
+.info2 div {
+    padding-left: 145px;
+}
+/*end chat detail*/
+/*chat block*/
+.chat-block{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.chat-block li:after{
+    clear:both;
+    content:'';
+    display:block;
+}
+.chat-block li{
+    padding-bottom:5px;
+}
+.chat-block li + li{
+    border-top: 1px solid #dfdfdf;
+    padding-top: 5px;
+}
+.chat-block li .chat-thumb{
+    float:left;
+    width:70px;
+}
+.chat_detail{
+    margin-left: 80px;
+}
+.chat_detail .title-list a{
+    font-weight: bold;
+    font-size: 13px;
+}
+.chat-detail .users_list{
+    background: #fff;
+    padding: 15px;
+}
+.chat-detail .list_option button{
+    padding: 6px 4px;
+}
+.chat_admin_block ul li{
+    display:inline-block;
+    width:50px;
+    height: 50px;
+    margin: 2px;
+}
+/*end chat block*/
+
+.box-member-chat ul li img{
+    width: 59px!important;
+    height:59px!important;
+}
+.box-member-chat ul li{
+    display: block;
+    padding:2px;
+    float: left;
+}
+.chat_topic_option{
+    margin:20px 0;
+}
+.list_for_chat{
+    margin-top:10px;
+}
+
+@media (min-width: 992px){
+
+    .chat-detail .join-btn{
+        margin-right:35px;
+    }
+}
+@media (max-width: 991px){
+    .chat-content-list .list_option,
+    .chat-detail .list_option{
+        right: 10px;
+        top: 10px;
+    }
+    .chat-detail .mo_breadcrumb{
+        margin-bottom:0;
+        padding-bottom:0;
+    }
+}
+@media (max-width: 767px){
+    .chat-content-list li .chat-thumb{
+        width:60px;
+        height:60px;
+    }
+    .chat-content-list li .chat-info{
+        margin-left: 70px;
+        padding-top: 0px;
+    }
+}
+
+.chat-spinner {
+    margin: 100px auto 0;
+    width: 70px;
+    text-align: center;
+}
+
+.chat-spinner > div {
+    width: 9px;
+    height: 9px;
+    background-color: #333;
+
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.chat-spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.chat-spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 40% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+      }
+}

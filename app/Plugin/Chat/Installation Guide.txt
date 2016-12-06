@@ -1,0 +1,86 @@
+﻿mooSocial - Mobile-Friendly Social Network Software
+	==============================================================================================================
+
+	- Website:	https://www.moosocial.com
+	- Support:  	https://clients.moosocial.com/tickets/create
+	- Email:	moo@moosocial.com
+	- Skype ID:	moosocial or moosocial.support
+	- Hotline:	+1.339.337.6053	
+	- Hours:	Business Hours, GMT +7
+	
+	- facebook:	https://www.facebook.com/moosocial
+	- mooCommunity:	https://community.moosocial.com
+
+	==============================================================================================================
+	
+	
+	//--- install ---//
+
+	*** Follow these steps to install "Chat" Plugin:
+
+		1. Upload "app" folder and their contents to your site (allow overwrite old files) via FTP .
+
+		2. Make sure Node.JS is installed on your server ( we recommend v6.9.1 or above ) then access your server via SSH, go to mooSite/app/Plugin/Chat/webroot/js/server directory
+		   and  install module dependencies with npm : "npm install" .
+
+               	3. After installing the dependencies , you can test the chat server by using the node command "node ."  .
+
+               	4. In case it works , you need to kill the  application which is started in step 3  and we will focus on running it as a service  so that they will automatically restart on reboot or failure, and can safely be used in a production environment .
+                   To do that , we recommend installing PM2 with npm command : "sudo npm install -g pm2" . After installing pm2 , you can start your chat server with pm2 command "pm2 start ChatApp.js" . Now your chat server is ready as http://yourdomain:3000 .
+                   For more information , you can see : https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04
+
+		2.1 Notice that in case you can not install pm2 , you can run chat as background service with the node command "node . >stdout.txt 2> stderr.txt &"
+
+		5. Go to Admin Dashboard >>> Plugins Manager >>> Manager.
+
+		6. Open tab "Not Installed Plugins" and find "Chat" click install.
+
+		7. To configure this plugin, please go to: Admin Dashboard >>> Plugins Manager >>> Chat >>> Chat Settings  then enter the chat server URL by using the url that you get it in the step 4 .
+
+		5. Go to Admin Dashboard >>> Clear Global Caches
+
+		6. Sign out and Sign in and Enjoy it :D
+	
+	//--- upgrade to new version ---//
+
+	*** Follow these steps to upgrade this plugin from older version:
+	
+		1. Check for newer version and download it at https://www.moosocial.com to upgrade "Chat”.
+		
+		2. Upload "Chat" folder and its contents to your site (allow overwrite old files).
+
+		3. Go to Admin Dashboard >>> Plugins Manager >>> Manager.
+		
+		4. Find "Chat" and click “Upgrade” button
+		
+		5. Go to Admin Dashboard >>> Clear Global Caches
+
+		6. If you are using pm2 to run chatApp as a service , you must to restart the chatApp server by typing the commandline :"pm2 restart ChatApp"
+
+		7. Sign out and Sign in and  Enjoy it :D
+
+
+	//--- notice ---//
+
+        If your server is using mooSocial 2.4.1 , you need to hack your template to use Google Material Icons for chat plugin by editing the file bellow  :
+          1. mooSite/app/View/Layouts/default.ctp if you are using the default theme
+          2. OR mooSite/app/View/Themed/your-template/Layouts/default.ctp if you don't use default theme
+             and append link tags bellow in the header tag in the default page    :
+             <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700"/>
+             <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+             After that , your HTML heading tag like the example bellow :
+             <head>
+             ....
+              <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700"/>
+              <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+             </head>
+          3. You need to replace the file MooPopupHelper.php in the patch_for_2_4_1 folder  to mooSite/app/View/Helper/MooPopupHelper.php if you want to replace Conversations  with Chat Messages
+          4. Add events for Friend model by updating it in the file  mooSite/app/Model/Friend.php
+          4.1 and find the line "public function afterSave($created, $options = array()){" then add the code "$this->getEventManager()->dispatch(new CakeEvent('Model.Friend.afterSave', $this));" bellow it
+          4.2 and find the line "public function beforeDelete(){" then add the code "$this->getEventManager()->dispatch(new CakeEvent('Model.Friend.beforeDelete', $this));" bellow it
+
+        You can skip the steps above if your mooSocial has a higher version than 2.4.1 .
+
+	Please open a support ticket in the Client Area of our website using the Support link above if you have any questions, suggestions, customization requests or problems with our script.
+
+	It is your responsibility to make a fully restorable backup copy of your code files and database before any install or upgrade. mooSocial will not be responsible for any data loss, downtime occurs from install or upgrade of its script. 

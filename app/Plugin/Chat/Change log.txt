@@ -1,0 +1,8 @@
+v1.1
++ Mobi Integration - Web version  [MOOPLUGIN-470]
++ Fixed online/offline issue
+v1.2
++ Parse a Link Like Facebook    [MOOPLUGIN-483]
++ Core conversations integration [MOOPLUGIN-484]
+v1.3
++ Added video conference feature

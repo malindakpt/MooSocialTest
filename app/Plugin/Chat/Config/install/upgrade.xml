@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<versions>
+    <version>
+        <number>1.0</number>
+        <queries>
+            <query></query>
+        </queries>
+    </version>
+    <version>
+        <number>1.2</number>
+        <queries>
+            <query>
+                <![CDATA[
+                    ALTER TABLE `{PREFIX}chat_status_messages` ADD INDEX `quick_unssen_messages` (`room_id`,`user_id`,`unseen`);
+                ]]>
+            </query>
+            <query>
+                <![CDATA[
+                        ALTER TABLE `{PREFIX}chat_rooms` ADD `latest_mesasge_id` INT NOT NULL DEFAULT '0';
+                ]]>
+            </query>
+            <query>
+                <![CDATA[
+                    CREATE TABLE IF NOT EXISTS `{PREFIX}chat_cached_query_user_stats` (
+                      `id` int(11) NOT NULL AUTO_INCREMENT,
+                      `user_id` int(11) NOT NULL,
+                      `new_friend` tinyint(1) NOT NULL DEFAULT '0',
+                      `new_block` tinyint(1) NOT NULL DEFAULT '0',
+                      PRIMARY KEY (`id`),
+                      UNIQUE KEY `fast_update` (`id`,`user_id`,`new_friend`,`new_block`)
+                    );
+                ]]>
+            </query>
+        </queries>
+    </version>
+    <version>
+        <number>1.3</number>
+        <queries>
+
+
+        </queries>
+    </version>
+</versions>

@@ -1,0 +1,373 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ChatPlugin.php:38
+#: View/Chats/admin_index.ctp:10
+msgid "General"
+msgstr ""
+
+#: ChatPlugin.php:39
+#: View/ChatSettings/admin_index.ctp:10
+msgid "Settings"
+msgstr ""
+
+#: ChatPlugin.php:40
+#: View/ChatMonitor/admin_index.ctp:9
+msgid "Monitor"
+msgstr ""
+
+#: ChatPlugin.php:41
+#: View/ChatLogs/admin_index.ctp:10
+msgid "Logs"
+msgstr ""
+
+#: ChatPlugin.php:42
+#: View/ChatPermissions/admin_index.ctp:8
+msgid "Permission"
+msgstr ""
+
+#: ChatPlugin.php:43
+#: View/ChatReports/admin_index.ctp:8
+msgid "Report"
+msgstr ""
+
+#: ChatPlugin.php:44
+#: View/ChatErrors/admin_index.ctp:8
+msgid "Error"
+msgstr ""
+
+#: Controller/ChatAppController.php:33
+msgid "Access denied"
+msgstr ""
+
+#: Controller/ChatLogsController.php:49
+msgid "No Results"
+msgstr ""
+
+#: Controller/ChatLogsController.php:70
+msgid "Chats Logs"
+msgstr ""
+
+#: Controller/ChatLogsController.php:87
+msgid "Rooms have been deleted"
+msgstr ""
+
+#: Controller/ChatReportsController.php:15
+msgid "Chats Manager"
+msgstr ""
+
+#: Controller/ChatReportsController.php:32
+msgid "Reports have been deleted"
+msgstr ""
+
+#: Controller/ChatSettingsController.php:59
+#: Controller/ChatsController.php:173
+msgid "You need to login first"
+msgstr ""
+
+#: Controller/ChatsController.php:177
+msgid "You are not in this room"
+msgstr ""
+
+#: View/ChatErrors/admin_index.ctp:3
+msgid "Chat Error"
+msgstr ""
+
+#: View/ChatLogs/admin_index.ctp:5
+msgid "Chat Logs"
+msgstr ""
+
+#: View/ChatLogs/admin_index.ctp:23
+msgid "Search by username or email"
+msgstr ""
+
+#: View/ChatLogs/admin_index.ctp:34
+#: View/ChatReports/admin_index.ctp:38
+msgid "ID"
+msgstr ""
+
+#: View/ChatLogs/admin_index.ctp:35
+#: View/ChatReports/admin_index.ctp:40
+msgid "Room"
+msgstr ""
+
+#: View/ChatLogs/admin_index.ctp:36
+msgid "Created"
+msgstr ""
+
+#: View/ChatLogs/admin_messages.ctp:28
+msgid "Back"
+msgstr ""
+
+#: View/ChatMonitor/admin_index.ctp:4
+msgid "Chat Monitor"
+msgstr ""
+
+#: View/ChatPermissions/admin_index.ctp:3
+msgid "Chat Permission"
+msgstr ""
+
+#: View/ChatPermissions/admin_index.ctp:14
+msgid "This plugin supports  settings are applied on a per member level .  You can go to %s to do it"
+msgstr ""
+
+#: View/ChatPermissions/admin_index.ctp:14
+msgid "User Roles"
+msgstr ""
+
+#: View/ChatPermissions/admin_index.ctp:16
+msgid "Notice that \"Guest\" Role is not allowed to see or use chat messages."
+msgstr ""
+
+#: View/ChatReports/admin_index.ctp:3
+msgid "Chat Report"
+msgstr ""
+
+#: View/ChatReports/admin_index.ctp:15
+msgid "Are you sure you want to delete these reports"
+msgstr ""
+
+#: View/ChatReports/admin_index.ctp:16
+msgid "Delete"
+msgstr ""
+
+#: View/ChatReports/admin_index.ctp:23
+msgid "Search by reason"
+msgstr ""
+
+#: View/ChatReports/admin_index.ctp:39
+msgid "Reason"
+msgstr ""
+
+#: View/ChatReports/admin_index.ctp:41
+msgid "Reported By"
+msgstr ""
+
+#: View/ChatReports/admin_index.ctp:42
+msgid "Date"
+msgstr ""
+
+#: View/ChatSettings/admin_index.ctp:5
+msgid "Chat Settings"
+msgstr ""
+
+#: View/ChatSettings/blocking.ctp:5;46
+msgid "Unblock"
+msgstr ""
+
+#: View/ChatSettings/blocking.ctp:28
+msgid "Block Settings"
+msgstr ""
+
+#: View/ChatSettings/blocking.ctp:36
+msgid "Once you block someone, that person can no longer  start a conversation with you"
+msgstr ""
+
+#: View/Chats/admin_index.ctp:5
+msgid "Chat General"
+msgstr ""
+
+#: View/Chats/messages.ctp:11
+msgid "Enter username to search"
+msgstr ""
+
+#: View/Helper/MessageHelper.php:30
+msgid "added "
+msgstr ""
+
+#: View/Helper/MessageHelper.php:33
+msgid "left the conversation"
+msgstr ""
+
+#: View/Helper/MessageHelper.php:45
+msgid "send a file"
+msgstr ""
+
+#: For setting
+msgid "Disable MooChat"
+msgstr ""
+
+msgid "Chat Server URL"
+msgstr ""
+
+msgid "Hide offline users in Who's Online list?"
+msgstr ""
+
+msgid "Auto-open chatbox when a new message arrives"
+msgstr ""
+
+msgid "Beep on arrival of all messages?"
+msgstr ""
+
+msgid "If set to yes, MooChat bar will be hidden in mobile devices"
+msgstr ""
+
+msgid "Load bar in offline mode for all first time users"
+msgstr ""
+
+msgid "Number of messages that are fetched when load earlier messages"
+msgstr ""
+
+msgid "Number of messages that are fetched when chat window is opened for the first time"
+msgstr ""
+
+msgid "This feature will temporarily disable MooChat on your site."
+msgstr ""
+
+msgid "If MooChat is not working on your site, your chat server URL might be incorrect or your chat server is down"
+msgstr ""
+
+msgid "Number of messages that are fetched when chat window is opened for the first time . Notice that it must be greater than 10"
+msgstr ""
+
+msgid "Chat"
+msgstr ""
+
+msgid "Account Deleted"
+msgstr ""
+
+msgid "Turn on messages notifications"
+msgstr ""
+
+msgid "Conversation notifications  replaced by chat notifications"
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+# Begin Help section #
+msgid "Topics"
+msgstr ""
+
+msgid "Chat overview"
+msgstr ""
+
+msgid "Troubleshooting"
+msgstr ""
+
+msgid "Changelogs"
+msgstr ""
+
+msgid "1.0"
+msgstr ""
+
+msgid "1.1"
+msgstr ""
+
+msgid "1.2"
+msgstr ""
+
+msgid "mooChat is a Live Chat solution for mooSocial.It allows members to converse and exchange contents in real-time.mooChat is built using Node.js and ReactJS which provide excellent performance and minimal resources consumption compare to the old technology AJAX chat products."
+msgstr ""
+
+msgid "Compatibility"
+msgstr ""
+
+msgid "mooSocial  2.4.x, Mobile apps"
+msgstr ""
+
+msgid "Requirement"
+msgstr ""
+
+msgid "Node.js ( We recommend v4.4.7 or above )"
+msgstr ""
+
+msgid "Product Version"
+msgstr ""
+
+msgid "How to set up Chat server"
+msgstr ""
+
+msgid "New features will be added"
+msgstr ""
+
+msgid "Make sure Node.JS is installed on your server ( We recommend v4.4.7 or above )"
+msgstr ""
+
+msgid "Connecting your server via SSH, go to mooSite/app/Plugin/Chat/webroot/js/server directory and  install module dependencies with npm :"
+msgstr ""
+
+msgid "After installing the dependencies , you can test the chat server by using the node command"
+msgstr ""
+
+msgid "In case it works , you need to kill the  application which is started in step 3  and we will focus on running it as a service  so that they will automatically restart on reboot or failure, and can safely be used in a production environment.To do that , we recommend installing PM2 with npm command"
+msgstr ""
+
+msgid "After that , type next command"
+msgstr ""
+
+msgid "Notice that in case you can not install pm2 , you can run chat as background service with the node command %s"
+msgstr ""
+
+msgid "Video conference"
+msgstr ""
+
+msgid "Now your chat server is ready as %s"
+msgstr ""
+
+msgid "Please go to: Admin Dashboard >>> Plugins Manager >>> Chat >>> Chat Settings  then enter the chat server URL by using the url %s"
+msgstr ""
+
+msgid "For more information , you can see %s"
+msgstr ""
+
+msgid "How to change chat server's listening port"
+msgstr ""
+
+msgid "How to use HTTPS(SSL/TLS) with chat server"
+msgstr ""
+
+msgid "Video conference"
+msgstr ""
+
+msgid "If you want to run chat server on a port number XXXX , you can configure it in the file mooSite/app/Plugin/Chat/webroot/js/server/ChatApp.js. Find this line"
+msgstr ""
+
+msgid "and change it like the line bellow"
+msgstr ""
+
+msgid "Your are done . Test your chat server to make sure that it works right . Notice that you need to restart the chat server by using pm2 command"
+msgstr ""
+
+msgid "or go to mooSite/app/Plugin/Chat/webroot/js/server directory"
+msgstr ""
+# End  Help  section #
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

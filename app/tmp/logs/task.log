@@ -1,0 +1,328 @@
+2016-12-06 14:19:57 Task: Execution Check [930331675] [0] 
+2016-12-06 14:19:57 Task: Execution Pass [930331675] [0] 
+2016-12-06 14:19:57 Task: Task Execution Check [930331675] : Job Queue
+2016-12-06 14:19:57 Task: Task Execution Pass [930331675] : Job Queue
+2016-12-06 14:19:57 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 14:19:57 Task: Task Execution Complete [930331675] : Job Queue
+2016-12-06 14:19:57 Task: Task Execution Check [930331675] : Subscription
+2016-12-06 14:19:57 Task: Task Execution Pass [930331675] : Subscription
+2016-12-06 14:19:57 Task: Task Execution Complete [930331675] : Subscription
+2016-12-06 14:19:57 Task: Execution Complete [930331675] [0]
+2016-12-06 14:20:03 Task: Execution Check [1618204175] [0] 
+2016-12-06 14:20:03 Task: Execution Pass [1618204175] [0] 
+2016-12-06 14:20:03 Task: Task Execution Check [1618204175] : Job Queue
+2016-12-06 14:20:03 Task: Task Execution Pass [1618204175] : Job Queue
+2016-12-06 14:20:03 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 14:20:03 Task: Task Execution Complete [1618204175] : Job Queue
+2016-12-06 14:20:03 Task: Task Execution Check [1618204175] : Background Mailer
+2016-12-06 14:20:03 Task: Task Execution Pass [1618204175] : Background Mailer
+2016-12-06 14:20:03 Task: Task Execution Complete [1618204175] : Background Mailer
+2016-12-06 14:20:03 Task: Execution Complete [1618204175] [0]
+2016-12-06 14:24:50 Task: Execution Check [835994895] [0] 
+2016-12-06 14:24:50 Task: Execution Pass [835994895] [0] 
+2016-12-06 14:24:50 Task: Task Execution Check [835994895] : Job Queue
+2016-12-06 14:24:50 Task: Task Execution Pass [835994895] : Job Queue
+2016-12-06 14:24:50 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 14:24:50 Task: Task Execution Complete [835994895] : Job Queue
+2016-12-06 14:24:50 Task: Task Execution Check [835994895] : Background Mailer
+2016-12-06 14:24:50 Task: Task Execution Pass [835994895] : Background Mailer
+2016-12-06 14:24:50 Task: Task Execution Complete [835994895] : Background Mailer
+2016-12-06 14:24:50 Task: Execution Complete [835994895] [0]
+2016-12-06 14:24:54 Task: Execution Check [1966816657] [0] 
+2016-12-06 14:24:54 Task: Execution Pass [1966816657] [0] 
+2016-12-06 14:24:54 Task: Task Execution Check [1966816657] : Notifications Summary
+2016-12-06 14:24:54 Task: Task Execution Pass [1966816657] : Notifications Summary
+2016-12-06 14:24:54 Task: Task Execution Complete [1966816657] : Notifications Summary
+2016-12-06 14:24:54 Task: Execution Complete [1966816657] [0]
+2016-12-06 14:26:37 Task: Execution Check [1494799622] [0] 
+2016-12-06 14:26:37 Task: Execution Pass [1494799622] [0] 
+2016-12-06 14:26:37 Task: Task Execution Check [1494799622] : Job Queue
+2016-12-06 14:26:37 Task: Task Execution Pass [1494799622] : Job Queue
+2016-12-06 14:26:37 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 14:26:37 Task: Task Execution Complete [1494799622] : Job Queue
+2016-12-06 14:26:37 Task: Task Execution Check [1494799622] : Background Mailer
+2016-12-06 14:26:37 Task: Task Execution Pass [1494799622] : Background Mailer
+2016-12-06 14:26:37 Task: Task Execution Complete [1494799622] : Background Mailer
+2016-12-06 14:26:37 Task: Execution Complete [1494799622] [0]
+2016-12-06 14:26:52 Task: Execution Check [1644031719] [0] 
+2016-12-06 14:26:52 Task: Execution Pass [1644031719] [0] 
+2016-12-06 14:26:52 Task: Task Execution Check [1644031719] : Job Queue
+2016-12-06 14:26:52 Task: Task Execution Pass [1644031719] : Job Queue
+2016-12-06 14:26:52 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 14:26:52 Task: Task Execution Complete [1644031719] : Job Queue
+2016-12-06 14:26:52 Task: Task Execution Check [1644031719] : Sitemap generate
+2016-12-06 14:26:52 Task: Task Execution Pass [1644031719] : Sitemap generate
+2016-12-06 14:26:52 Task: Task Execution Complete [1644031719] : Sitemap generate
+2016-12-06 14:26:52 Task: Execution Complete [1644031719] [0]
+2016-12-06 14:28:35 Task: Execution Check [1952602200] [0] 
+2016-12-06 14:28:35 Task: Execution Pass [1952602200] [0] 
+2016-12-06 14:28:35 Task: Task Execution Check [1952602200] : Job Queue
+2016-12-06 14:28:35 Task: Task Execution Pass [1952602200] : Job Queue
+2016-12-06 14:28:35 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 14:28:35 Task: Task Execution Complete [1952602200] : Job Queue
+2016-12-06 14:28:35 Task: Task Execution Check [1952602200] : Background Mailer
+2016-12-06 14:28:35 Task: Task Execution Pass [1952602200] : Background Mailer
+2016-12-06 14:28:35 Task: Task Execution Complete [1952602200] : Background Mailer
+2016-12-06 14:28:35 Task: Execution Complete [1952602200] [0]
+2016-12-06 14:28:40 Task: Execution Check [1446002193] [0] 
+2016-12-06 14:28:40 Task: Execution Pass [1446002193] [0] 
+2016-12-06 14:28:40 Task: Task Execution Check [1446002193] : Job Queue
+2016-12-06 14:28:40 Task: Task Execution Pass [1446002193] : Job Queue
+2016-12-06 14:28:40 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 14:28:40 Task: Task Execution Complete [1446002193] : Job Queue
+2016-12-06 14:28:40 Task: Task Execution Check [1446002193] : Sitemap generate
+2016-12-06 14:28:40 Task: Task Execution Pass [1446002193] : Sitemap generate
+2016-12-06 14:28:40 Task: Task Execution Complete [1446002193] : Sitemap generate
+2016-12-06 14:28:40 Task: Execution Complete [1446002193] [0]
+2016-12-06 14:30:49 Task: Execution Check [641693028] [0] 
+2016-12-06 14:30:49 Task: Execution Pass [641693028] [0] 
+2016-12-06 14:30:49 Task: Task Execution Check [641693028] : Job Queue
+2016-12-06 14:30:49 Task: Task Execution Pass [641693028] : Job Queue
+2016-12-06 14:30:49 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 14:30:49 Task: Task Execution Complete [641693028] : Job Queue
+2016-12-06 14:30:49 Task: Task Execution Check [641693028] : Subscription
+2016-12-06 14:30:49 Task: Task Execution Pass [641693028] : Subscription
+2016-12-06 14:30:49 Task: Task Execution Complete [641693028] : Subscription
+2016-12-06 14:30:49 Task: Execution Complete [641693028] [0]
+2016-12-06 14:32:06 Task: Execution Check [857473176] [0] 
+2016-12-06 14:32:06 Task: Execution Pass [857473176] [0] 
+2016-12-06 14:32:06 Task: Task Execution Check [857473176] : Job Queue
+2016-12-06 14:32:06 Task: Task Execution Pass [857473176] : Job Queue
+2016-12-06 14:32:06 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 14:32:06 Task: Task Execution Complete [857473176] : Job Queue
+2016-12-06 14:32:06 Task: Task Execution Check [857473176] : Background Mailer
+2016-12-06 14:32:06 Task: Task Execution Pass [857473176] : Background Mailer
+2016-12-06 14:32:06 Task: Task Execution Complete [857473176] : Background Mailer
+2016-12-06 14:32:06 Task: Execution Complete [857473176] [0]
+2016-12-06 14:38:35 Task: Execution Check [1839667238] [0] 
+2016-12-06 14:38:35 Task: Execution Pass [1839667238] [0] 
+2016-12-06 14:38:35 Task: Task Execution Check [1839667238] : Job Queue
+2016-12-06 14:38:35 Task: Task Execution Pass [1839667238] : Job Queue
+2016-12-06 14:38:35 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 14:38:35 Task: Task Execution Complete [1839667238] : Job Queue
+2016-12-06 14:38:35 Task: Task Execution Check [1839667238] : Background Mailer
+2016-12-06 14:38:35 Task: Task Execution Pass [1839667238] : Background Mailer
+2016-12-06 14:38:35 Task: Task Execution Complete [1839667238] : Background Mailer
+2016-12-06 14:38:35 Task: Execution Complete [1839667238] [0]
+2016-12-06 14:38:38 Task: Execution Check [611297732] [0] 
+2016-12-06 14:38:38 Task: Execution Pass [611297732] [0] 
+2016-12-06 14:38:38 Task: Task Execution Check [611297732] : Sitemap generate
+2016-12-06 14:38:38 Task: Task Execution Pass [611297732] : Sitemap generate
+2016-12-06 14:38:38 Task: Task Execution Complete [611297732] : Sitemap generate
+2016-12-06 14:38:38 Task: Execution Complete [611297732] [0]
+2016-12-06 17:32:53 Task: Execution Check [1614205803] [0] 
+2016-12-06 17:32:53 Task: Execution Pass [1614205803] [0] 
+2016-12-06 17:32:53 Task: Task Execution Check [1614205803] : Job Queue
+2016-12-06 17:32:53 Task: Task Execution Pass [1614205803] : Job Queue
+2016-12-06 17:32:53 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 17:32:53 Task: Task Execution Complete [1614205803] : Job Queue
+2016-12-06 17:32:53 Task: Task Execution Check [1614205803] : Subscription
+2016-12-06 17:32:53 Task: Task Execution Pass [1614205803] : Subscription
+2016-12-06 17:32:53 Task: Task Execution Complete [1614205803] : Subscription
+2016-12-06 17:32:53 Task: Execution Complete [1614205803] [0]
+2016-12-06 17:33:36 Task: Execution Check [1750037786] [0] 
+2016-12-06 17:33:36 Task: Execution Pass [1750037786] [0] 
+2016-12-06 17:33:36 Task: Task Execution Check [1750037786] : Job Queue
+2016-12-06 17:33:36 Task: Task Execution Pass [1750037786] : Job Queue
+2016-12-06 17:33:36 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 17:33:36 Task: Task Execution Complete [1750037786] : Job Queue
+2016-12-06 17:33:36 Task: Task Execution Check [1750037786] : Background Mailer
+2016-12-06 17:33:36 Task: Task Execution Pass [1750037786] : Background Mailer
+2016-12-06 17:33:36 Task: Task Execution Complete [1750037786] : Background Mailer
+2016-12-06 17:33:36 Task: Execution Complete [1750037786] [0]
+2016-12-06 17:54:29 Task: Execution Check [1777715479] [0] 
+2016-12-06 17:54:29 Task: Execution Pass [1777715479] [0] 
+2016-12-06 17:54:29 Task: Task Execution Check [1777715479] : Job Queue
+2016-12-06 17:54:29 Task: Task Execution Pass [1777715479] : Job Queue
+2016-12-06 17:54:29 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 17:54:29 Task: Task Execution Complete [1777715479] : Job Queue
+2016-12-06 17:54:29 Task: Task Execution Check [1777715479] : Subscription
+2016-12-06 17:54:29 Task: Task Execution Pass [1777715479] : Subscription
+2016-12-06 17:54:30 Task: Task Execution Complete [1777715479] : Subscription
+2016-12-06 17:54:30 Task: Execution Complete [1777715479] [0]
+2016-12-06 17:54:31 Task: Execution Check [1857328116] [0] 
+2016-12-06 17:54:31 Task: Execution Pass [1857328116] [0] 
+2016-12-06 17:54:31 Task: Task Execution Check [1857328116] : Background Mailer
+2016-12-06 17:54:31 Task: Task Execution Pass [1857328116] : Background Mailer
+2016-12-06 17:54:32 Task: Task Execution Complete [1857328116] : Background Mailer
+2016-12-06 17:54:32 Task: Execution Complete [1857328116] [0]
+2016-12-06 17:54:35 Task: Execution Check [511179784] [0] 
+2016-12-06 17:54:35 Task: Execution Pass [511179784] [0] 
+2016-12-06 17:54:35 Task: Task Execution Check [511179784] : Job Queue
+2016-12-06 17:54:35 Task: Task Execution Pass [511179784] : Job Queue
+2016-12-06 17:54:35 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 17:54:35 Task: Task Execution Complete [511179784] : Job Queue
+2016-12-06 17:54:35 Task: Task Execution Check [511179784] : Sitemap generate
+2016-12-06 17:54:35 Task: Task Execution Pass [511179784] : Sitemap generate
+2016-12-06 17:54:35 Task: Task Execution Complete [511179784] : Sitemap generate
+2016-12-06 17:54:35 Task: Execution Complete [511179784] [0]
+2016-12-06 17:54:37 Task: Execution Check [1365021694] [0] 
+2016-12-06 17:54:37 Task: Execution Pass [1365021694] [0] 
+2016-12-06 17:54:37 Task: Execution Complete [1365021694] [0]
+2016-12-06 18:03:01 Task: Execution Check [264536689] [0] 
+2016-12-06 18:03:01 Task: Execution Pass [264536689] [0] 
+2016-12-06 18:03:01 Task: Task Execution Check [264536689] : Job Queue
+2016-12-06 18:03:01 Task: Task Execution Pass [264536689] : Job Queue
+2016-12-06 18:03:01 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:03:01 Task: Task Execution Complete [264536689] : Job Queue
+2016-12-06 18:03:01 Task: Task Execution Check [264536689] : Background Mailer
+2016-12-06 18:03:01 Task: Task Execution Pass [264536689] : Background Mailer
+2016-12-06 18:03:01 Task: Task Execution Complete [264536689] : Background Mailer
+2016-12-06 18:03:01 Task: Execution Complete [264536689] [0]
+2016-12-06 18:05:10 Task: Execution Check [78982916] [0] 
+2016-12-06 18:05:10 Task: Execution Pass [78982916] [0] 
+2016-12-06 18:05:10 Task: Task Execution Check [78982916] : Job Queue
+2016-12-06 18:05:10 Task: Task Execution Pass [78982916] : Job Queue
+2016-12-06 18:05:10 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:05:11 Task: Task Execution Complete [78982916] : Job Queue
+2016-12-06 18:05:11 Task: Task Execution Check [78982916] : Subscription
+2016-12-06 18:05:11 Task: Task Execution Pass [78982916] : Subscription
+2016-12-06 18:05:11 Task: Task Execution Complete [78982916] : Subscription
+2016-12-06 18:05:11 Task: Execution Complete [78982916] [0]
+2016-12-06 18:07:12 Task: Execution Check [387314030] [0] 
+2016-12-06 18:07:12 Task: Execution Pass [387314030] [0] 
+2016-12-06 18:07:12 Task: Task Execution Check [387314030] : Job Queue
+2016-12-06 18:07:12 Task: Task Execution Pass [387314030] : Job Queue
+2016-12-06 18:07:12 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:07:12 Task: Task Execution Complete [387314030] : Job Queue
+2016-12-06 18:07:12 Task: Task Execution Check [387314030] : Background Mailer
+2016-12-06 18:07:12 Task: Task Execution Pass [387314030] : Background Mailer
+2016-12-06 18:07:12 Task: Task Execution Complete [387314030] : Background Mailer
+2016-12-06 18:07:12 Task: Execution Complete [387314030] [0]
+2016-12-06 18:07:21 Task: Execution Check [1658757603] [0] 
+2016-12-06 18:07:21 Task: Execution Pass [1658757603] [0] 
+2016-12-06 18:07:21 Task: Task Execution Check [1658757603] : Job Queue
+2016-12-06 18:07:21 Task: Task Execution Pass [1658757603] : Job Queue
+2016-12-06 18:07:21 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:07:21 Task: Task Execution Complete [1658757603] : Job Queue
+2016-12-06 18:07:21 Task: Task Execution Check [1658757603] : Sitemap generate
+2016-12-06 18:07:21 Task: Task Execution Pass [1658757603] : Sitemap generate
+2016-12-06 18:07:21 Task: Task Execution Complete [1658757603] : Sitemap generate
+2016-12-06 18:07:21 Task: Execution Complete [1658757603] [0]
+2016-12-06 18:07:59 Task: Execution Check [1077445670] [0] 
+2016-12-06 18:07:59 Task: Execution Pass [1077445670] [0] 
+2016-12-06 18:07:59 Task: Task Execution Check [1077445670] : Job Queue
+2016-12-06 18:07:59 Task: Task Execution Pass [1077445670] : Job Queue
+2016-12-06 18:07:59 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:07:59 Task: Task Execution Complete [1077445670] : Job Queue
+2016-12-06 18:07:59 Task: Task Execution Check [1077445670] : Sitemap generate
+2016-12-06 18:07:59 Task: Task Execution Pass [1077445670] : Sitemap generate
+2016-12-06 18:08:00 Task: Task Execution Complete [1077445670] : Sitemap generate
+2016-12-06 18:08:00 Task: Execution Complete [1077445670] [0]
+2016-12-06 18:08:00 Task: Execution Error: 1077445670 - 2048 Declaration of Tag::beforeDelete() should be compatible with AppModel::beforeDelete($cascade = true) C:\wamp\www\moo2\app\Model\Tag.php 121
+2016-12-06 18:08:05 Task: Execution Check [89101749] [0] 
+2016-12-06 18:08:05 Task: Execution Pass [89101749] [0] 
+2016-12-06 18:08:05 Task: Task Execution Check [89101749] : Job Queue
+2016-12-06 18:08:05 Task: Task Execution Pass [89101749] : Job Queue
+2016-12-06 18:08:05 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:08:05 Task: Task Execution Complete [89101749] : Job Queue
+2016-12-06 18:08:05 Task: Task Execution Check [89101749] : Sitemap generate
+2016-12-06 18:08:05 Task: Task Execution Pass [89101749] : Sitemap generate
+2016-12-06 18:08:05 Task: Task Execution Complete [89101749] : Sitemap generate
+2016-12-06 18:08:05 Task: Execution Complete [89101749] [0]
+2016-12-06 18:08:10 Task: Execution Check [1975752809] [0] 
+2016-12-06 18:08:10 Task: Execution Pass [1975752809] [0] 
+2016-12-06 18:08:10 Task: Task Execution Check [1975752809] : Job Queue
+2016-12-06 18:08:10 Task: Task Execution Pass [1975752809] : Job Queue
+2016-12-06 18:08:10 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:08:10 Task: Task Execution Complete [1975752809] : Job Queue
+2016-12-06 18:08:10 Task: Task Execution Check [1975752809] : Sitemap generate
+2016-12-06 18:08:10 Task: Task Execution Pass [1975752809] : Sitemap generate
+2016-12-06 18:08:10 Task: Task Execution Complete [1975752809] : Sitemap generate
+2016-12-06 18:08:10 Task: Execution Complete [1975752809] [0]
+2016-12-06 18:08:55 Task: Execution Check [1615523162] [0] 
+2016-12-06 18:08:55 Task: Execution Pass [1615523162] [0] 
+2016-12-06 18:08:55 Task: Task Execution Check [1615523162] : Job Queue
+2016-12-06 18:08:55 Task: Task Execution Pass [1615523162] : Job Queue
+2016-12-06 18:08:55 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:08:55 Task: Task Execution Complete [1615523162] : Job Queue
+2016-12-06 18:08:55 Task: Task Execution Check [1615523162] : Background Mailer
+2016-12-06 18:08:55 Task: Task Execution Pass [1615523162] : Background Mailer
+2016-12-06 18:08:55 Task: Task Execution Complete [1615523162] : Background Mailer
+2016-12-06 18:08:55 Task: Execution Complete [1615523162] [0]
+2016-12-06 18:09:12 Task: Execution Check [941132072] [0] 
+2016-12-06 18:09:12 Task: Execution Pass [941132072] [0] 
+2016-12-06 18:09:12 Task: Task Execution Check [941132072] : Job Queue
+2016-12-06 18:09:12 Task: Task Execution Pass [941132072] : Job Queue
+2016-12-06 18:09:12 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:09:12 Task: Task Execution Complete [941132072] : Job Queue
+2016-12-06 18:09:12 Task: Task Execution Check [941132072] : Sitemap generate
+2016-12-06 18:09:12 Task: Task Execution Pass [941132072] : Sitemap generate
+2016-12-06 18:09:12 Task: Task Execution Complete [941132072] : Sitemap generate
+2016-12-06 18:09:12 Task: Execution Complete [941132072] [0]
+2016-12-06 18:09:15 Task: Execution Check [2136283223] [0] 
+2016-12-06 18:09:15 Task: Execution Pass [2136283223] [0] 
+2016-12-06 18:09:15 Task: Task Execution Check [2136283223] : Reminder
+2016-12-06 18:09:15 Task: Task Execution Pass [2136283223] : Reminder
+2016-12-06 18:09:15 Task: Execution Error: 2136283223 - 1 Class 'NoteTaskReminder' not found C:\wamp\www\moo2\app\Plugin\Cron\Model\Task.php 456
+2016-12-06 18:09:18 Task: Execution Check [43028069] [0] 
+2016-12-06 18:09:18 Task: Execution Pass [43028069] [0] 
+2016-12-06 18:09:18 Task: Task Execution Check [43028069] : Job Queue
+2016-12-06 18:09:18 Task: Task Execution Pass [43028069] : Job Queue
+2016-12-06 18:09:18 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:09:18 Task: Task Execution Complete [43028069] : Job Queue
+2016-12-06 18:09:18 Task: Task Execution Check [43028069] : Sitemap generate
+2016-12-06 18:09:18 Task: Task Execution Pass [43028069] : Sitemap generate
+2016-12-06 18:09:18 Task: Task Execution Complete [43028069] : Sitemap generate
+2016-12-06 18:09:18 Task: Execution Complete [43028069] [0]
+2016-12-06 18:25:15 Task: Execution Check [1154571796] [0] 
+2016-12-06 18:25:15 Task: Execution Pass [1154571796] [0] 
+2016-12-06 18:25:15 Task: Task Execution Check [1154571796] : Job Queue
+2016-12-06 18:25:15 Task: Task Execution Pass [1154571796] : Job Queue
+2016-12-06 18:25:15 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:25:15 Task: Task Execution Complete [1154571796] : Job Queue
+2016-12-06 18:25:15 Task: Task Execution Check [1154571796] : Subscription
+2016-12-06 18:25:15 Task: Task Execution Pass [1154571796] : Subscription
+2016-12-06 18:25:15 Task: Task Execution Complete [1154571796] : Subscription
+2016-12-06 18:25:15 Task: Execution Complete [1154571796] [0]
+2016-12-06 18:25:17 Task: Execution Check [1787719077] [0] 
+2016-12-06 18:25:17 Task: Execution Pass [1787719077] [0] 
+2016-12-06 18:25:17 Task: Task Execution Check [1787719077] : Background Mailer
+2016-12-06 18:25:17 Task: Task Execution Pass [1787719077] : Background Mailer
+2016-12-06 18:25:17 Task: Task Execution Complete [1787719077] : Background Mailer
+2016-12-06 18:25:17 Task: Execution Complete [1787719077] [0]
+2016-12-06 18:25:21 Task: Execution Check [800429144] [0] 
+2016-12-06 18:25:21 Task: Execution Pass [800429144] [0] 
+2016-12-06 18:25:21 Task: Task Execution Check [800429144] : Job Queue
+2016-12-06 18:25:21 Task: Task Execution Pass [800429144] : Job Queue
+2016-12-06 18:25:21 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:25:21 Task: Task Execution Complete [800429144] : Job Queue
+2016-12-06 18:25:21 Task: Task Execution Check [800429144] : Sitemap generate
+2016-12-06 18:25:21 Task: Task Execution Pass [800429144] : Sitemap generate
+2016-12-06 18:25:21 Task: Task Execution Complete [800429144] : Sitemap generate
+2016-12-06 18:25:21 Task: Execution Complete [800429144] [0]
+2016-12-06 18:25:23 Task: Execution Check [1331301443] [0] 
+2016-12-06 18:25:23 Task: Execution Pass [1331301443] [0] 
+2016-12-06 18:25:23 Task: Task Execution Check [1331301443] : Reminder
+2016-12-06 18:25:23 Task: Task Execution Pass [1331301443] : Reminder
+2016-12-06 18:25:23 Task: Execution Error: 1331301443 - 1 Class 'NoteTaskReminder' not found C:\wamp\www\moo2\app\Plugin\Cron\Model\Task.php 456
+2016-12-06 18:27:07 Task: Execution Check [834289859] [0] 
+2016-12-06 18:27:07 Task: Execution Pass [834289859] [0] 
+2016-12-06 18:27:07 Task: Task Execution Check [834289859] : Job Queue
+2016-12-06 18:27:07 Task: Task Execution Pass [834289859] : Job Queue
+2016-12-06 18:27:07 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:27:07 Task: Task Execution Complete [834289859] : Job Queue
+2016-12-06 18:27:07 Task: Task Execution Check [834289859] : Background Mailer
+2016-12-06 18:27:07 Task: Task Execution Pass [834289859] : Background Mailer
+2016-12-06 18:27:08 Task: Task Execution Complete [834289859] : Background Mailer
+2016-12-06 18:27:08 Task: Execution Complete [834289859] [0]
+2016-12-06 18:29:07 Task: Execution Check [1719432284] [0] 
+2016-12-06 18:29:07 Task: Execution Pass [1719432284] [0] 
+2016-12-06 18:29:07 Task: Task Execution Check [1719432284] : Job Queue
+2016-12-06 18:29:07 Task: Task Execution Pass [1719432284] : Job Queue
+2016-12-06 18:29:07 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:29:07 Task: Task Execution Complete [1719432284] : Job Queue
+2016-12-06 18:29:07 Task: Task Execution Check [1719432284] : Background Mailer
+2016-12-06 18:29:07 Task: Task Execution Pass [1719432284] : Background Mailer
+2016-12-06 18:29:07 Task: Task Execution Complete [1719432284] : Background Mailer
+2016-12-06 18:29:07 Task: Execution Complete [1719432284] [0]
+2016-12-06 18:31:00 Task: Execution Check [1755579893] [0] 
+2016-12-06 18:31:00 Task: Execution Pass [1755579893] [0] 
+2016-12-06 18:31:00 Task: Task Execution Check [1755579893] : Job Queue
+2016-12-06 18:31:01 Task: Task Execution Pass [1755579893] : Job Queue
+2016-12-06 18:31:01 Task: Job Execution Loop Cancelled - Nothing to do
+2016-12-06 18:31:01 Task: Task Execution Complete [1755579893] : Job Queue
+2016-12-06 18:31:01 Task: Task Execution Check [1755579893] : Background Mailer
+2016-12-06 18:31:01 Task: Task Execution Pass [1755579893] : Background Mailer
+2016-12-06 18:31:01 Task: Task Execution Complete [1755579893] : Background Mailer
+2016-12-06 18:31:01 Task: Execution Complete [1755579893] [0]

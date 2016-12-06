@@ -1,0 +1,32 @@
+{
+  "name": "moo-chat",
+  "version": "0.0.2",
+  "description": "moo-chat",
+  "main": "ChatApp.js",
+  "private": true,
+  "license": "SEE LICENSE IN https://moosocial.com/license/",
+  "dependencies": {
+    "babel-preset-react": ">=6.5.0",
+    "babelify": ">=7.2.0",
+    "bloodhound-js": ">=1.2.1",
+    "flux": ">=2.1.1",
+    "howler": ">=2.0.0",
+    "i18next": ">=3.2.0",
+    "immutable": ">=3.8.1",
+    "lodash": "^4.14.0",
+    "moment": ">=2.13.0",
+    "object-assign": ">=4.1.0",
+    "react": ">=15.1.0",
+    "react-dom": ">=15.1.0",
+    "react-modal": "^1.3.0",
+    "react-tooltip": "^2.0.2",
+    "socket.io": ">=1.4.5",
+    "socket.io-client": ">=1.4.5",
+    "valid-url": ">=1.0.9"
+  },
+  "scripts": {
+    "test": "browserify -t [ babelify --presets [ react ] ]   main.js -s mooChat >  mooChat.js",
+    "mobi": "browserify -t [ babelify --presets [ react ] ]   main-mobile.js -s mooChat >  mooChat-mobile.js",
+    "build": ""
+  }
+}

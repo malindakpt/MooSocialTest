@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info>
+    <name>Topic2</name>
+    <key>Topic2</key>
+    <version>1.0</version>
+    <description>topic2</description>
+    <author>Malinda</author>
+    <website>https://moosocial.com/wiki/doku.php?id=documentation:create_first_plugin</website>
+    <bootstrap>1</bootstrap>
+    <routes>1</routes>
+    <addtomenu>1</addtomenu>
+</info>
