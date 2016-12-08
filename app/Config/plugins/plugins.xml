@@ -115,5 +115,11 @@
       <bootstrap>1</bootstrap>
       <routes>1</routes>
     </plugin>
+    <plugin>
+      <name>ActivityFilter</name>
+      <enabled>1</enabled>
+      <bootstrap>1</bootstrap>
+      <routes>1</routes>
+    </plugin>
   </plugins>
 </info>

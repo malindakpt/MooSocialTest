@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info>
+    <name>Activity Filter</name>
+    <key>ActivityFilter</key>
+    <version>1.0</version>
+    <description>Activity Filter</description>
+    <author>Activity Filter</author>
+    <website>http://book.cakephp.org/2.0/en/models/associations-linking-models-together.html</website>
+    <bootstrap>1</bootstrap>
+    <routes>1</routes>
+    <addtomenu>1</addtomenu>
+</info>
